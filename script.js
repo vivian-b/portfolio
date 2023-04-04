@@ -1,179 +1,213 @@
-// reference: 
+// reference:
 // https://codepen.io/zenadesign/pen/bevJRP
 
+
+
 $(document).ready(function () {
-  // article 1: hover interaction
-  // red background + highlighted text + reveal old articles
+
   $(".trigger").hover(
     function () {
-      $("#background-color").addClass("reveal", 100, "swing");
-      $(".hl1 .textHL").addClass("highlight", 100, "swing");
-      $(this).addClass("float", 100, "swing");
-      $(".hiddenLongArticles").addClass("revealed", 100, "swing");
+      $(this).removeClass("currentHover", 100, "swing");
+
+      $(".currentHover").addClass("greying", 100);
+      $(".reveal").addClass("revealed", 100, "swing");
+
     },
 
     function () {
-      $("#background-color").removeClass("reveal", 100, "swing");
-      $(".textHL").removeClass("highlight", 100, "swing");
-      $(this).removeClass("float", 100, "swing");
-      $(".hiddenLongArticles").removeClass("revealed", 100, "swing");
+      $(this).addClass("currentHover", 100, "swing");
+
+      $(".currentHover").removeClass("greying", 0);
+      $(".reveal").removeClass("revealed", 100);
+
     }
   );
 
-  // article 2: hover interaction
-  // red background + highlighted text + reveal old articles
   $(".trigger2").hover(
     function () {
-      $("#background-color").addClass("reveal", 100, "swing");
-      $(".hl2 .textHL").addClass("highlight", 100, "swing");
-      $(this).addClass("float", 100, "swing");
-      $(".hiddenLongArticles").addClass("revealed", 100, "swing");
+
+      $(".dimOff").addClass("dim", 200);
+
     },
 
     function () {
-      $("#background-color").removeClass("reveal", 100, "swing");
-      $(".textHL").removeClass("highlight", 100, "swing");
-      $(this).removeClass("float", 100, "swing");
-      $(".hiddenLongArticles").removeClass("revealed", 100, "swing");
+  
+      $(".dimOff").removeClass("dim", 0);
+      $(".dimOff").finish();
+
     }
   );
 
-  // article 3: hover interaction
-  // red background + highlighted text + reveal old articles
-  $(".trigger3").hover(
-    function () {
-      $("#background-color").addClass("reveal", 100, "swing");
-      $(".hl3 .textHL").addClass("highlight", 100, "swing");
-      $(this).addClass("float", 100, "swing");
-      $(".hiddenLongArticles").addClass("revealed", 100, "swing");
-    },
+  $(".imgC1").hover(function () {
+    $(".imagePreview").addClass("imageChange", 100, "swing");
 
+    $(".imagePreview").removeClass(
+      "imageChange2 imageChange3 imageChange4 imageChange5 imageChange6",
+      100,
+      "swing"
+    );
+  });
+
+  $(".imgC2").hover(function () {
+    $(".imagePreview").addClass("imageChange2", 100, "swing");
+
+    $(".imagePreview").removeClass(
+      "imageChange imageChange3 imageChange4 imageChange5 imageChange6",
+      100,
+      "swing"
+    );
+  });
+
+  $(".imgC3").hover(function () {
+    $(".imagePreview").addClass("imageChange3", 100, "swing");
+
+    $(".imagePreview").removeClass(
+      "imageChange1 imageChange2 imageChange4 imageChange5 imageChange6",
+      100,
+      "swing"
+    );
+  });
+
+  $(".imgC4").hover(function () {
+    $(".imagePreview").addClass("imageChange4", 100, "swing");
+
+    $(".imagePreview").removeClass(
+      "imageChange1 imageChange2 imageChange3 imageChange5 imageChange6",
+      100,
+      "swing"
+    );
+  });
+
+  $(".imgC5").hover(function () {
+    $(".imagePreview").addClass("imageChange5", 100, "swing");
+
+    $(".imagePreview").removeClass(
+      "imageChange1 imageChange2 imageChange3 imageChange4 imageChange6",
+      100,
+      "swing"
+    );
+  });
+
+  $(".imgC6").hover(function () {
+    $(".imagePreview").addClass("imageChange6", 100, "swing");
+    $(".imagePreview").removeClass(
+      "imageChange1 imageChange2 imageChange3 imageChange4 imageChange5",
+      100,
+      "swing"
+    );
+  });
+
+  $(".hoverli").hover(
     function () {
-      $("#background-color").removeClass("reveal", 100, "swing");
-      $(".textHL").removeClass("highlight", 100, "swing");
-      $(this).removeClass("float", 100, "swing");
-      $(".hiddenLongArticles").removeClass("revealed", 100, "swing");
+       $('ul.file_menu').slideDown('medium');
+    }, 
+    function () {
+       $('ul.file_menu').slideUp('medium');
+
     }
   );
 
-  // "racism": hover interaction
-  // blurring
-  $(".redacted").hover(
-    function () {
-      $(".redacted").addClass("highlightW");
-      $(".redacted").addClass("blur");
-    },
-
-    function () {
-      $(".redacted").removeClass("highlightW");
-      $(".redacted").removeClass("blur");
-    }
-  );
-
-  // "asian": hover interaction
-  // fade out
-  $(".faded").hover(
-    function () {
-      $(this).addClass("fading", 600, "swing");
-    },
-
-    function () {
-      $(this).removeClass("fading", 800, "swing");
-    }
-  );
-
-  // title: hover interaction
-  // image change
-  $(".morph").hover(
-    function () {
-      $(".image").addClass("image2");
-    },
-
-    function () {
-      $(".image").removeClass("image2");
-    }
-  );
-
-  // title: hover interaction
-  // black background + text highlight
-  $(".triggerB").hover(
-    function () {
-      $("#background-color").addClass("revealB", 100, "swing");
-      $(".main-title .textHL").addClass("highlightB", 100, "swing");
-
-      $(this).addClass("float", 100, "swing");
-    },
-
-    function () {
-      $("#background-color").removeClass("revealB", 100, "swing");
-      $(".textHL").removeClass("highlightB", 100, "swing");
-
-      $(this).removeClass("float", 100, "swing");
-
-      // $(this).removeClass('blur',50, "swing");
-    }
-  );
-
-  // top news: hover interaction
-  // black background + text highlight
-  $(" .triggerB2").hover(
-    function () {
-      $("#background-color").addClass("revealB", 100, "swing");
-
-      $(this).addClass("float", 100, "swing");
-      $(".hiddenOldNews").addClass("revealed", 100, "swing");
-    },
-
-    function () {
-      $("#background-color").removeClass("revealB", 100, "swing");
-
-      $(this).removeClass("float", 100, "swing");
-      $(".hiddenOldNews").removeClass("revealed", 100, "swing");
-    }
-  );
 });
 
-// unused interactions
-// // https://codepen.io/daveredfern/pen/zBGBJV
-// $(window).scroll(function() {
 
-//     // selectors
-//     var $window = $(window),
-//         $body = $('body'),
-//         $panel = $('.panel');
+let slideIndex = 0;
+showSlides();
 
-//     // Change 33% earlier than scroll position so colour is there when you arrive.
-//     var scroll = $window.scrollTop() + ($window.height() / 4);
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  slides[slideIndex-1].style.display = "block";  
+  setTimeout(showSlides, 5000); // Change image every 2 seconds
+};
 
-//     $panel.each(function () {
-//       var $this = $(this);
+function scrollFunction() {
+  const element = document.getElementById("scroll");
+  element.scrollIntoView({ behavior: 'smooth', block: 'end'});
+  
+}
 
-//       // if position is within range of this panel.
-//       // So position of (position of top of div <= scroll position) && (position of bottom of div > scroll position).
-//       // Remember we set the scroll to 33% earlier in scroll var.
-//       if ($this.position().top <= scroll && $this.position().top + $this.height() > scroll) {
 
-//         // Remove all classes on body with color-
-//         // $body.removeClass(function (index, css) {
-//         //   return (css.match (/(^|\s)color-\S+/g) || []).join(' ');
-//         // }, 10, "linear");
+// // article 2: hover interaction
+// // red background + highlighted text + reveal old articles
+// $(".trigger2").hover(
+//   function () {
+//     $("#background-color").addClass("reveal", 100, "swing");
+//     $(".hl2 .textHL").addClass("highlight", 100, "swing");
+//     $(this).addClass("float", 100, "swing");
+//     $(".hiddenLongArticles").addClass("revealed", 100, "swing");
+//   },
 
-//         $body.removeClass(function (index, css) {
-//             return (css.match (/(^|\s)color-\S+/g) || []).join(' ');
-//           });
+//   function () {
+//     $("#background-color").removeClass("reveal", 100, "swing");
+//     $(".textHL").removeClass("highlight", 100, "swing");
+//     $(this).removeClass("float", 100, "swing");
+//     $(".hiddenLongArticles").removeClass("revealed", 100, "swing");
+//   }
+// );
 
-//         // Add class of currently active div
-//         $body.addClass('color-' + $(this).data('color'));
-//       }
-//     });
+// // article 3: hover interaction
+// // red background + highlighted text + reveal old articles
+// $(".trigger3").hover(
+//   function () {
+//     $("#background-color").addClass("reveal", 100, "swing");
+//     $(".hl3 .textHL").addClass("highlight", 100, "swing");
+//     $(this).addClass("float", 100, "swing");
+//     $(".hiddenLongArticles").addClass("revealed", 100, "swing");
+//   },
 
-//   }).scroll();
+//   function () {
+//     $("#background-color").removeClass("reveal", 100, "swing");
+//     $(".textHL").removeClass("highlight", 100, "swing");
+//     $(this).removeClass("float", 100, "swing");
+//     $(".hiddenLongArticles").removeClass("revealed", 100, "swing");
+//   }
+// );
 
-  // $(function () {
-  //   $("li").mouseover(function () {
-  //     $(this).addClass("active");
-  //   });
-  //   $("li").mouseout(function () {
-  //     $(this).removeClass("active");
-  //   });
-  // });
+// // "racism": hover interaction
+// // blurring
+// $(".redacted").hover(
+//   function () {
+//     $(".redacted").addClass("highlightW");
+//     $(".redacted").addClass("blur");
+//   },
+
+//   function () {
+//     $(".redacted").removeClass("highlightW");
+//     $(".redacted").removeClass("blur");
+//   }
+// );
+
+// // title: hover interaction
+// // image reveal
+// $(".morph").hover(
+//   function () {
+//     $(".image").addClass("image2");
+//   },
+
+//   function () {
+//     $(".image").removeClass("image2");
+//   }
+// );
+
+// // top news: hover interaction
+// // black background + text highlight
+// $(" .triggerB2").hover(
+//   function () {
+//     $("#background-color").addClass("revealB", 100, "swing");
+
+//     $(this).addClass("float", 100, "swing");
+//     $(".hiddenOldNews").addClass("revealed", 100, "swing");
+//   },
+
+//   function () {
+//     $("#background-color").removeClass("revealB", 100, "swing");
+
+//     $(this).removeClass("float", 100, "swing");
+//     $(".hiddenOldNews").removeClass("revealed", 100, "swing");
+//   }
+// );

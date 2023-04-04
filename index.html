@@ -9,6 +9,7 @@
     <title>Portfolio</title>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    
     <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <!-- <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="//code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.js"></script> -->
@@ -17,63 +18,101 @@
 <body>
     <!-- <header> logo</header> -->
 
-    <div id="grid-container">
+    <div class="container">
 
-        <div class="filter"></div>
-        <section class="section1">
+        <div class="section section1">
+            <div class="homeCover">
+                <div class="mySlides fade">
+                    <div class="coverImage">1</div>
+                    <img src=" " style="width:100%">
+                </div>
+    
+                <div class="mySlides fade">
+                    <div class="coverImage">2</div>
+                    <img src=" " style="width:100%">
+    
+                </div>
+    
+                <div class="mySlides fade">
+                    <div class="coverImage">3</div>
+                    <img src=" " style="width:100%">
+    
+                </div>
+    
+                <div class="mySlides fade">
+                    <div class="coverImage">4</div>
+                    <img src=" " style="width:100%">
+    
+                </div>
+    
+                <div class="mySlides fade">
+                    <div class="coverImage">5</div>
+                    <img src=" " style="width:100%">
+    
+                </div>
+    
+                <div class="mySlides fade">
+                    <div class="coverImage">6</div>
+                    <img src=" " style="width:100%">
+    
+                </div>
+
+                <div class="filter"></div>
+            </div>
+
+            <div class="navM">
+                <img src="ressources/logoW.png" alt="vbLogo White" onclick="scrollFunction()">
+            </div>
+
             <div class="navL">
+                <a href="index.html" class="nav-link">video</a>
+                <a href="gallery.html" class="nav-link"> projects</a>
+                <a href="index.html" class="nav-link"> contact</a>
+            </div>
+      
+            <div class="navR">
+                <a href="index.html" class="nav-link"> vivianbui@live.ca</a>
+            </div>
+        </div>
+
+        <div class="section section2" id="scroll">
+
+            <div class="nav2">
                 <a href="index.html" class="nav-link">video</a>
                 <a href="projects.html" class="nav-link"> projects</a>
                 <a href="index.html" class="nav-link"> contact</a>
             </div>
-            <div class="navR">
-                <a href="index.html" class="nav-link"> vivianbui@live.ca</a>
+
+            <h2 class="homeH2 textW">Hello.</h2>
+
+            <p class="homeText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas explicabo
+                repudiandae
+                neque id sequi dolor
+                eos sint, amet quidem sapiente quibusdam corrupti aspernatur sit quam impedit, illo
+                necessitatibus
+                similique. Aspernatur?</p>
+        </div>
+
+        <div class="section section3">
+
+            <div class="nav2">
+                <a href="index.html" class="nav-linkB">video </a>
+                <a href="projects.html" class="nav-linkB"> projects </a>
+                <a href="index.html" class="nav-linkB"> contact </a>
             </div>
-        </section>
 
-        <section class="section2">
+            <h2 class="homeH2">This is <br>
+                what I do.</h2>
 
-                <div class="nav2">
-                    <a href="index.html" class="nav-link">video</a>
-                    <a href="projects.html" class="nav-link"> projects</a>
-                    <a href="index.html" class="nav-link"> contact</a>
-                </div>
+            <p class="homeText textB">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas explicabo
+                repudiandae
+                neque id sequi dolor
+                eos sint, amet quidem sapiente quibusdam corrupti aspernatur sit quam impedit, illo
+                necessitatibus
+                similique. Aspernatur?
+            </p>
+        </div>
 
-                <h2 class="homeH2 textW">Hello.</h2>
-
-                <p class="homeText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas explicabo
-                    repudiandae
-                    neque id sequi dolor
-                    eos sint, amet quidem sapiente quibusdam corrupti aspernatur sit quam impedit, illo
-                    necessitatibus
-                    similique. Aspernatur?</p>
-        </section>
-
-        <section class="section3">
-
-                <div class="nav2">
-                    <a href="index.html" class="nav-linkB">video </a>
-                    <a href="projects.html" class="nav-linkB"> projects </a>
-                    <a href="index.html" class="nav-linkB"> contact </a>
-                </div>
-
-                <h2 class="homeH2">This is <br>
-                    what I do.</h2>
-
-                <p class="homeText textB">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas explicabo
-                    repudiandae
-                    neque id sequi dolor
-                    eos sint, amet quidem sapiente quibusdam corrupti aspernatur sit quam impedit, illo
-                    necessitatibus
-                    similique. Aspernatur?
-                </p>
-                <!-- <a href="projects.html" class="nav-link homeList"> <p class="textB"> project list</p></a> -->
-        </section>
-
-        <!-- <div class="bgIMG"></div>
-         <div class="bgB"></div>
-         <div class="bgW"></div> -->
-        <!-- grid container -->
     </div>
 
     <script src="script.js"></script>
