@@ -11,6 +11,8 @@ $(document).ready(function () {
 
       $(".currentHover").addClass("greying", 100);
       $(".reveal").addClass("revealed", 100, "swing");
+      $(".imageFilter").css('opacity', '0', "swing");
+
 
     },
 
@@ -19,6 +21,8 @@ $(document).ready(function () {
 
       $(".currentHover").removeClass("greying", 0);
       $(".reveal").removeClass("revealed", 100);
+      $(".imageFilter").css('opacity', '0.8',"swing" );
+
 
     }
   );
@@ -99,11 +103,10 @@ $(document).ready(function () {
 
   $(".hoverli").hover(
     function () {
-       $('ul.file_menu').slideDown('medium');
+       $('ul.file_menu').slideDown(400, "swing");
     }, 
     function () {
-       $('ul.file_menu').slideUp('medium');
-
+       $('ul.file_menu').slideUp(250);
     }
   );
 
