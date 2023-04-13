@@ -3,40 +3,133 @@
 
 const project = [
   {
-    name: "Printemps",
-    year: "2000",
-    src: "ressources/home_prey.png",
-    description: "cube 1",
-    tools: "tool a, tool b, tool c",
-    tags: "tag a",
-  },
-  {
-    name: "Printemps2",
-    year: "2020",
-    src: "ressources/home_cube.jpg",
-    description: "cube 2",
-    tools: "tool a",
-    tags: "tag a, tag b",
-  },
-  {
-    name: "Printemps3",
+    // 00
+    name: "Check It",
 
-    src: "ressources/home_prey.png",
-    description: "cube 3",
-    tools: "tool a, tool c",
-    tags: "tag a, tag b, tag c",
   },
   {
-    name: "Printemps4",
-    src: "ressources/home_prey.png",
-    description: "cube 4",
-    tools: "tool a, tool b, tool c",
-    tags: "tag a, tag b, tag c",
+    // 1
+    name: "Dance Typo. Rhythm",
+    year: "2023",
+    src: "ressources/home_cube.jpg",
+    description: "Typographic based brochure and eBook to illustrate different types of dances",
+    tools: "Adobe Illustrator, Adobe InDesign, Adobe Photoshop, Adobe After Effects",
+    tags: "publication, layout, typography, motion",
   },
   {
-    name: "Printemps5",
+    // 2
+    name: "GD Brochure",
+    year: "2023",
     src: "ressources/home_prey.png",
-    description: "cube 5",
+    description:
+"Detailed and informative program brochure of Dawson's Graphic Design program.",
+    tools: "Adobe InDesign, Adobe Illustrator",
+    tags: "publication,layout,typography",
+  },
+  {
+    // 3
+    name: "Type Cube",
+    src: "ressources/home_prey.png",
+    description:
+      "An artistic paper-based game that reflects an art movement.      ",
+    tools: "Adobe InDesign, Adobe Illustrator",
+    tags: "paper craft, typography, printing",
+  },
+  {
+    // 4
+    name: "2020 Vernissage",
+    year: "2020",
+    src: "ressources/home_prey.png",
+    description:
+      "A duo poster designed for the Dawson Graphic Design 2020 Vernissage exhibition.      ",
+    tools: "Adobe Photoshop, Adobe Illustrator ",
+    tags: "poster design, research creation",
+  },
+  {
+    // 5
+    name: "Miel MTL",
+    year: "2020",
+    src: "ressources/home_prey.png",
+    description:
+      "Rebrand an existing company’s brand identity, including its stationery and packaging.",
+    tools: "Adobe Illustrator, Adobe InDesign",
+    tags: "branding, packaging, logo design, montage",
+  },
+  {
+    // 6
+    name: "RunBunRun",
+    year: "2021",
+    src: "ressources/home_cube.jpg",
+    description: "Small Javascript arcade-like based game where the player is a bunny trying to collect carrots and avoid daggers flying towards them.",
+    tools: "Visual Studio Code, Procreate, Photoshop",
+    tags: "game design, illustration, coding, Javascript",
+  },
+  {
+    // 7
+    name: "Orphéon!",
+    year: "2021",
+    src: "ressources/home_prey.png",
+    description: "Building a prototype website with multiple pages for a fictional company. The logo and identity of the brand are designed based on research from existing labels.     ",
+    tools: "Adobe XD, Adobe Illustrator",
+    tags: "web design, branding, logo design",
+  },
+  {
+    // 8
+    name: "Prey",
+    year: "2021",
+    src: "ressources/home_prey.png",
+    description:
+      "Making a narrative sculpture with a minimalistic art style. Accompanied by a video montage to present the piece in detail.      ",
+    tools: "Blender 3.0",
+    tags: "3D modeling",
+  },
+  {
+    // 9
+    name: "22",
+    year: "2022",
+    src: "ressources/home_prey.png",
+    description:
+      "An experiment through research creation to create a design based on peoples preferences from a design survey.",
+    tools: "Adobe Photoshop, Adobe Illustrator ",
+    tags: "poster design, research creation",
+  },
+  {
+    // 10
+    name: "Cycle of money",
+    src: "ressources/home_prey.png",
+    description:
+      "Illustrating the theme of “speed” with the concept of “the cycle of money” in a short animation. Words are constantly repeated and replaced at a fast pace.    ",
+    tools: "Adobe After Effects, Adobe Illustrator",
+    tags: "motion graphics, typography, B&W",
+  },
+  {
+    // 11
+    name: "Heya!",
+    year: "2022",
+    src: "ressources/home_prey.png",
+    description:
+      "Applying UI/UX principles to conceptualize an ideal dating app with gamification features.    ",
+    tools: "Adobe XD, Adobe Illustrator, Adobe After Effects",
+    tags: "app design, UI/UX, motion graphics, branding,",
+  },
+  {
+    // 12
+    name: "Check It",
+    year: "2023",
+    src: "ressources/home_cube.jpg",
+    description: "News aggregator app for millenials.",
+    tools: "Figma, Adobe Illustrator",
+    tags: "app design, UI / UX, logo design, branding",
+  },
+  {
+    // 13
+    name: "Miel MTL Ad",
+    year: "2023",
+    src: "ressources/home_prey.png",
+    description:
+      "Rebrand an existing company’s brand identity, including its stationery and packaging.",
+    tools: "Adobe Illustrator, Blender 3.1",
+    tags: "3D modeling, branding, packaging, logo design, montage",
   },
 ];
 
@@ -63,12 +156,20 @@ function changeImage() {
 }
 
 $(document).ready(function () {
-  $(".trigger").hover(
-    
-    function () {
-      $(this).removeClass("currentHover", 100, "swing");
+  $(document).tooltip();
 
-      // $(".currentHover").addClass("greying", 100);
+  $(".open").on("click", function () {
+    $(".popup-overlay, .popup-content").addClass("active");
+    $(".popup-overlay, .popup-content").css("opacity", "100", "swing");
+  });
+
+  $(".close").on("click", function () {
+    $(".popup-overlay, .popup-content").removeClass("active");
+    $(".popup-overlay, .popup-content").css("opacity", "0", "swing");
+  });
+
+  $(".trigger").hover(
+    function () {
       $(".imageFilter").css("opacity", "0", "swing");
       $(".reveal").css("opacity", "100", "swing");
 
@@ -76,9 +177,6 @@ $(document).ready(function () {
     },
 
     function () {
-      $(this).addClass("currentHover", 100, "swing");
-
-      // $(".currentHover").removeClass("greying", 0);
       $(".imageFilter").css("opacity", "0.8", "swing");
       $(".reveal").css("opacity", "0", "swing");
     }
@@ -86,8 +184,7 @@ $(document).ready(function () {
 
   $(".gal").hover(
     function () {
-      $(".arc").css("opacity", "0.05");
-
+      $(".arc").css("opacity", "0.1");
     },
 
     function () {
@@ -97,14 +194,14 @@ $(document).ready(function () {
 
   $(".arc").hover(
     function () {
-      $(".gal").css("opacity", "0.05");
+      $(".gal").css("opacity", "0.1");
     },
 
     function () {
       $(".gal").css("opacity", "1", "swing");
     }
   );
-  
+
   $(".imageFilter").hover(
     function () {
       $(".imageFilter").css("opacity", "0", "swing");
@@ -123,90 +220,17 @@ $(document).ready(function () {
     },
 
     function () {
-      $(".dimOff").removeClass("dim", 0);
+      $(".dimOff").removeClass("dim", 200);
       $(".dimOff").finish();
     }
   );
 
-  $(".imgC1").hover(function () {
-    // $('#descriptionParagraph').text($(this).attr('id') + ":" + $(this).attr('alt'));
-    $("#descriptionParagraph").text("first one");
-
-    $(".imagePreview").addClass("imageChange", 100, "swing");
-
-    $(".imagePreview").removeClass(
-      "imageChange2 imageChange3 imageChange4 imageChange5 imageChange6",
-      100,
-      "swing"
-    );
-  });
-
-  $(".imgC2").hover(function () {
-    $(".imagePreview").addClass("imageChange2", 100, "swing");
-    $("#descriptionParagraph").text("second one");
-
-    $(".imagePreview").removeClass(
-      "imageChange imageChange3 imageChange4 imageChange5 imageChange6",
-      100,
-      "swing"
-    );
-  });
-
-  // $(".imgC2").hover(function () {
-  //   $(".imagePreview").addClass("imageChange2", 100, "swing");
-
-  //   $(".imagePreview").removeClass(
-  //     "imageChange imageChange3 imageChange4 imageChange5 imageChange6",
-  //     100,
-  //     "swing"
-  //   );
-  // });
-
-  // $(".imgC3").hover(function () {
-  //   $(".imagePreview").addClass("imageChange3", 100, "swing");
-
-  //   $(".imagePreview").removeClass(
-  //     "imageChange1 imageChange2 imageChange4 imageChange5 imageChange6",
-  //     100,
-  //     "swing"
-  //   );
-  // });
-
-  // $(".imgC4").hover(function () {
-  //   $(".imagePreview").addClass("imageChange4", 100, "swing");
-
-  //   $(".imagePreview").removeClass(
-  //     "imageChange1 imageChange2 imageChange3 imageChange5 imageChange6",
-  //     100,
-  //     "swing"
-  //   );
-  // });
-
-  // $(".imgC5").hover(function () {
-  //   $(".imagePreview").addClass("imageChange5", 100, "swing");
-
-  //   $(".imagePreview").removeClass(
-  //     "imageChange1 imageChange2 imageChange3 imageChange4 imageChange6",
-  //     100,
-  //     "swing"
-  //   );
-  // });
-
-  // $(".imgC6").hover(function () {
-  //   $(".imagePreview").addClass("imageChange6", 100, "swing");
-  //   $(".imagePreview").removeClass(
-  //     "imageChange1 imageChange2 imageChange3 imageChange4 imageChange5",
-  //     100,
-  //     "swing"
-  //   );
-  // });
-
   $(".hoverli").hover(
     function () {
-      $("ul.file_menu").slideDown(400, "swing");
+      $("ul.file-menu").slideDown(250, "swing");
     },
     function () {
-      $("ul.file_menu").slideUp(250);
+      $("ul.file-menu").slideUp(250);
     }
   );
 });
@@ -231,6 +255,11 @@ function showSlides() {
 function scrollFunction() {
   const element = document.getElementById("scroll");
   element.scrollIntoView({ behavior: "smooth", block: "end" });
+}
+
+function scrollBot() {
+  const element2 = document.getElementById("scrollB");
+  element2.scrollIntoView({ behavior: "smooth", block: "end" });
 }
 
 // // article 2: hover interaction

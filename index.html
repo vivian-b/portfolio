@@ -9,10 +9,7 @@
     <title>Portfolio</title>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-
-    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <!-- <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="//code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.js"></script> -->
+    <script src="//code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 </head>
 
 <body>
@@ -23,7 +20,7 @@
         <div class="section section1">
             <div class="homeCover">
                 <div class="mySlides fade">
-                    <img src="ressources/home_cube.jpg" style="width:100%">
+                    <img src="ressources/home_cube.jpg" alt="cube" style="width:100%">
                 </div>
 
                 <div class="mySlides fade">
@@ -54,7 +51,7 @@
             </div>
 
             <div class="navM">
-                <img src="ressources/logoW.png" alt="vbLogo White" onclick="scrollFunction()">
+                <img src="ressources/logoW.png" alt="vbLogo White" style="cursor:pointer" onclick="scrollFunction()">
             </div>
 
             <div class="navB">
@@ -63,21 +60,45 @@
 
             <div class="navL">
                 <a href="https://youtu.be/RRmho9cJC9w" target="_blank" class="nav-link">video</a>
-                <a href="gallery.html" class="nav-link"> projects</a>
-                <a href="contact.html" class="nav-link"> contact</a>
+                <!-- <a href="contact.html" class="nav-link"> contact</a> -->
+                <a class="nav-link open"> contact</a>
+                <li class="hoverli">
+                    <p class="textW"> projects</p>
+                    <ul class="file-menu">
+                        <li><a href="archives.html">
+                                <p class="textW homeAG"> archive</p>
+                            </a></li>
+                        <li><a href="gallery.html">
+                                <p class="textW homeAG"> gallery</p>
+                            </a></li>
+                    </ul>
+                <li>
+            </div>
+
+            <!--Creates the popup body-->
+            <div class="popup-overlay">
+                <!--Creates the popup content-->
+                <div class="popup-content">
+                    <p class="close nav-link">x</p>
+                    <a href="mailto:vivianbui@live.ca"> vivianbui@live.ca</a>
+                    <a style="cursor:text">1 438 396 6429</a>
+                    <a>LinkedIn</a>
+                    <a>Instagram</a>
+                    <a>Youtube</a>
+                </div>
             </div>
 
             <div class="navR">
-                <a href="index.html" class="nav-link"> vivianbui@live.ca</a>
+                <a href="mailto:vivianbui@live.ca" class="nav-link"> vivianbui@live.ca</a>
             </div>
         </div>
-        <!--  -->
+
         <div class="section section2" id="scroll">
 
             <div class="nav2">
+                <a class="nav-link" onclick="scrollBot()"> projects</a>
                 <a href="https://youtu.be/RRmho9cJC9w" target="_blank" class="nav-link">video</a>
-                <a href="gallery.html" class="nav-link"> projects</a>
-                <a href="contact.html" class="nav-link"> contact</a>
+                <a class="nav-link open"> contact</a>
             </div>
 
             <h2 class="homeH2 textW">hello.</h2>
@@ -86,8 +107,8 @@
                 superfluous details in her designs.  All elements in her work have a purpose. Vivian experiments with
                 finding the simplest form possible to convey the deepest meaning, often limiting her design to a
                 restricted amount of color, shape and type. </p>
-           
-                <div class="navB2">
+
+            <div class="navB2">
                 <p class="textW">2 / 4</p>
             </div>
         </div>
@@ -96,9 +117,9 @@
         <div class="section section3">
 
             <div class="nav2">
+                <a class="nav-linkB" onclick="scrollBot()"> projects</a>
                 <a href="https://youtu.be/RRmho9cJC9w" target="_blank" class="nav-linkB">video</a>
-                <a href="gallery.html" class="nav-linkB"> projects</a>
-                <a href="contact.html" class="nav-linkB"> contact</a>
+                <a class="nav-linkV open"> contact</a>
             </div>
 
             <h2 class="homeH2">this is <br>
@@ -117,14 +138,8 @@
             </div>
         </div>
 
-        <div class="section section4">
-            <!-- <div class="nav2">
-                <a href="index.html" class="nav-linkB">video </a>
-                <a href="projects.html" class="nav-linkB"> projects </a>
-                <a href="contact.html" class="nav-linkB"> contact </a>
-                <a href="index.html" class="nav-link"> vivianbui@live.ca</a>
+        <div class="section section4" id="scrollB">
 
-            </div> -->
 
             <h3 class="homeH3 gal"> <a href="gallery.html"> gallery</a> </h3>
 
