@@ -4,32 +4,39 @@
 const project = [
   {
     // 00
-    name: "Check It",
-
+    name: "Printemps Numérique",
+    year: "2020",
+    src: "ressources/GP_printemps.png",
+    description:
+      "Creative motion graphics-based video promotion for the event/festival.",
+    tools: "Adobe Illustrator, Adobe Photoshop, Adobe After Effects",
+    tags: "motion graphics, animation",
   },
   {
     // 1
     name: "Dance Typo. Rhythm",
     year: "2023",
-    src: "ressources/home_cube.jpg",
-    description: "Typographic based brochure and eBook to illustrate different types of dances",
-    tools: "Adobe Illustrator, Adobe InDesign, Adobe Photoshop, Adobe After Effects",
+    src: "ressources/archives/dance.jpg",
+    description:
+      "Typographic based brochure and eBook to illustrate different types of dances",
+    tools:
+      "Adobe Illustrator, Adobe InDesign, Adobe Photoshop, Adobe After Effects",
     tags: "publication, layout, typography, motion",
   },
   {
     // 2
     name: "GD Brochure",
     year: "2023",
-    src: "ressources/home_prey.png",
+    src: "ressources/archives/gdb.png",
     description:
-"Detailed and informative program brochure of Dawson's Graphic Design program.",
+      "Detailed and informative program brochure of Dawson's Graphic Design program.",
     tools: "Adobe InDesign, Adobe Illustrator",
     tags: "publication,layout,typography",
   },
   {
     // 3
     name: "Type Cube",
-    src: "ressources/home_prey.png",
+    src: "ressources/archives/typecube.jpg",
     description:
       "An artistic paper-based game that reflects an art movement.      ",
     tools: "Adobe InDesign, Adobe Illustrator",
@@ -39,7 +46,7 @@ const project = [
     // 4
     name: "2020 Vernissage",
     year: "2020",
-    src: "ressources/home_prey.png",
+    src: "ressources/archives/2020.jpg",
     description:
       "A duo poster designed for the Dawson Graphic Design 2020 Vernissage exhibition.      ",
     tools: "Adobe Photoshop, Adobe Illustrator ",
@@ -49,7 +56,7 @@ const project = [
     // 5
     name: "Miel MTL",
     year: "2020",
-    src: "ressources/home_prey.png",
+    src: "ressources/archives/mielmtl1.png",
     description:
       "Rebrand an existing company’s brand identity, including its stationery and packaging.",
     tools: "Adobe Illustrator, Adobe InDesign",
@@ -59,17 +66,19 @@ const project = [
     // 6
     name: "RunBunRun",
     year: "2021",
-    src: "ressources/home_cube.jpg",
-    description: "Small Javascript arcade-like based game where the player is a bunny trying to collect carrots and avoid daggers flying towards them.",
+    src: "ressources/archives/runbunrun.png",
+    description:
+      "Small Javascript arcade-like based game where the player is a bunny trying to collect carrots and avoid daggers flying towards them.",
     tools: "Visual Studio Code, Procreate, Photoshop",
     tags: "game design, illustration, coding, Javascript",
   },
   {
     // 7
-    name: "Orphéon!",
+    name: "Orphéon",
     year: "2021",
-    src: "ressources/home_prey.png",
-    description: "Building a prototype website with multiple pages for a fictional company. The logo and identity of the brand are designed based on research from existing labels.     ",
+    src: "ressources/archives/orpheon.png",
+    description:
+      "Building a prototype website with multiple pages for a fictional company. The logo and identity of the brand are designed based on research from existing labels.     ",
     tools: "Adobe XD, Adobe Illustrator",
     tags: "web design, branding, logo design",
   },
@@ -87,7 +96,7 @@ const project = [
     // 9
     name: "22",
     year: "2022",
-    src: "ressources/home_prey.png",
+    src: "ressources/archives/22.png",
     description:
       "An experiment through research creation to create a design based on peoples preferences from a design survey.",
     tools: "Adobe Photoshop, Adobe Illustrator ",
@@ -96,9 +105,9 @@ const project = [
   {
     // 10
     name: "Cycle of money",
-    src: "ressources/home_prey.png",
+    src: "ressources/archives/money.png",
     description:
-      "Illustrating the theme of “speed” with the concept of “the cycle of money” in a short animation. Words are constantly repeated and replaced at a fast pace.    ",
+      "Short typographic animation to illustrate the theme of speed through money.",
     tools: "Adobe After Effects, Adobe Illustrator",
     tags: "motion graphics, typography, B&W",
   },
@@ -106,7 +115,7 @@ const project = [
     // 11
     name: "Heya!",
     year: "2022",
-    src: "ressources/home_prey.png",
+    src: "ressources/archives/heya.png",
     description:
       "Applying UI/UX principles to conceptualize an ideal dating app with gamification features.    ",
     tools: "Adobe XD, Adobe Illustrator, Adobe After Effects",
@@ -116,7 +125,7 @@ const project = [
     // 12
     name: "Check It",
     year: "2023",
-    src: "ressources/home_cube.jpg",
+    src: "ressources/GP_checkit.png",
     description: "News aggregator app for millenials.",
     tools: "Figma, Adobe Illustrator",
     tags: "app design, UI / UX, logo design, branding",
@@ -125,7 +134,7 @@ const project = [
     // 13
     name: "Miel MTL Ad",
     year: "2023",
-    src: "ressources/home_prey.png",
+    src: "ressources/GP_miel.png",
     description:
       "Rebrand an existing company’s brand identity, including its stationery and packaging.",
     tools: "Adobe Illustrator, Blender 3.1",
@@ -261,83 +270,3 @@ function scrollBot() {
   const element2 = document.getElementById("scrollB");
   element2.scrollIntoView({ behavior: "smooth", block: "end" });
 }
-
-// // article 2: hover interaction
-// // red background + highlighted text + reveal old articles
-// $(".trigger2").hover(
-//   function () {
-//     $("#background-color").addClass("reveal", 100, "swing");
-//     $(".hl2 .textHL").addClass("highlight", 100, "swing");
-//     $(this).addClass("float", 100, "swing");
-//     $(".hiddenLongArticles").addClass("revealed", 100, "swing");
-//   },
-
-//   function () {
-//     $("#background-color").removeClass("reveal", 100, "swing");
-//     $(".textHL").removeClass("highlight", 100, "swing");
-//     $(this).removeClass("float", 100, "swing");
-//     $(".hiddenLongArticles").removeClass("revealed", 100, "swing");
-//   }
-// );
-
-// // article 3: hover interaction
-// // red background + highlighted text + reveal old articles
-// $(".trigger3").hover(
-//   function () {
-//     $("#background-color").addClass("reveal", 100, "swing");
-//     $(".hl3 .textHL").addClass("highlight", 100, "swing");
-//     $(this).addClass("float", 100, "swing");
-//     $(".hiddenLongArticles").addClass("revealed", 100, "swing");
-//   },
-
-//   function () {
-//     $("#background-color").removeClass("reveal", 100, "swing");
-//     $(".textHL").removeClass("highlight", 100, "swing");
-//     $(this).removeClass("float", 100, "swing");
-//     $(".hiddenLongArticles").removeClass("revealed", 100, "swing");
-//   }
-// );
-
-// // "racism": hover interaction
-// // blurring
-// $(".redacted").hover(
-//   function () {
-//     $(".redacted").addClass("highlightW");
-//     $(".redacted").addClass("blur");
-//   },
-
-//   function () {
-//     $(".redacted").removeClass("highlightW");
-//     $(".redacted").removeClass("blur");
-//   }
-// );
-
-// // title: hover interaction
-// // image reveal
-// $(".morph").hover(
-//   function () {
-//     $(".image").addClass("image2");
-//   },
-
-//   function () {
-//     $(".image").removeClass("image2");
-//   }
-// );
-
-// // top news: hover interaction
-// // black background + text highlight
-// $(" .triggerB2").hover(
-//   function () {
-//     $("#background-color").addClass("revealB", 100, "swing");
-
-//     $(this).addClass("float", 100, "swing");
-//     $(".hiddenOldNews").addClass("revealed", 100, "swing");
-//   },
-
-//   function () {
-//     $("#background-color").removeClass("revealB", 100, "swing");
-
-//     $(this).removeClass("float", 100, "swing");
-//     $(".hiddenOldNews").removeClass("revealed", 100, "swing");
-//   }
-// );
