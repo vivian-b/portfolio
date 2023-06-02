@@ -56,7 +56,9 @@
       cursor: unset;
   }
 
-
+  .triggerLink {
+    cursor:crosshair;
+}
   .popup-overlay {
       /*Hides pop-up when there is no "active" class*/
       visibility: hidden;
@@ -213,7 +215,9 @@
       padding: 2.5%;
   }
 
-
+  .section1 {
+    grid-template-rows: 1fr;
+}
 
   .section2 {
       grid-template-rows: 1.1fr 1fr;
@@ -249,6 +253,16 @@
       font-weight: 200;
   }
 
+  .email {
+      grid-column: 1;
+
+      font-size: 222%;
+      line-height: 139%;
+
+      color: white;
+  }
+
+
   .homeH2 {
       grid-row: 2;
       grid-column: 1;
@@ -276,20 +290,26 @@
   }
 
   /* first section */
-  .navL {
-      align-self: center;
-      grid-column: 1;
 
+  /* .homeCover {
+    height: 5vh;
+    width: 30vw;
+    grid-column: 3;
+    grid-row: 1;
+    align-self: center;
+
+} */
+
+  .navL {
+      grid-column: 1;
       z-index: 2;
+      align-self: center;
   }
 
   .navM {
-      justify-self: center;
       align-self: center;
 
-      grid-column: 1/3;
-      position: absolute;
-      z-index: 2;
+      grid-column: 2;
   }
 
   .navB {
@@ -340,10 +360,7 @@
   }
 
   .naviR {
-
       grid-column: 2;
-
-
   }
 
   .nav2 {
@@ -356,24 +373,7 @@
       width: 55px;
   }
 
-  .filter {
-      position: absolute;
-      width: 100vw;
-      height: 100vh;
-      left: 0px;
-      top: 0px;
 
-      background: rgba(8, 0, 25, 0.9);
-      background-blend-mode: luminosity;
-  }
-
-  .homeCover {
-      position: absolute;
-      height: 100vh;
-      width: 100vw;
-      left: 0px;
-      top: 0px;
-  }
 
   /* Fading animation */
   .fade {
@@ -477,10 +477,11 @@
       transition: all 0.2s;
   }
 
-.ltv{
-    color: rgb(50, 50, 50);
-    font-size: 50%;
-}
+  .ltv {
+      color: rgb(50, 50, 50);
+      font-size: 50%;
+  }
+
   .LnG {
       grid-column: 2;
   }
@@ -510,10 +511,6 @@
       /* border-bottom:0.1px white solid; */
   }
 
-  .filter-none {
-      filter: none;
-  }
-
   .nav-linkB:hover,
   .arc:hover,
   .gal:hover {
@@ -541,21 +538,19 @@
       grid-template-columns: 12% 40% 10% 1fr;
       grid-template-rows: 20% auto auto;
       row-gap: 2vh;
-
+column-gap: 1%;
   }
 
   .projectName,
   #projectYear,
   #projectTag,
   #projectTools {
-      font-weight: 700;
-
+      font-weight: 500;
   }
 
   .projectName {
       grid-column: 1;
       grid-row: 1;
-
   }
 
   #projectYear {
@@ -981,9 +976,10 @@
       scroll-snap-align: start;
   }
 
-  /* 
-  .section:nth-child(1) {
-      background-color: blanchedalmond;
+  
+  /* .section:nth-child(1) {
+    display: grid;
+grid-template-columns: 1fr 1fr;
   } */
 
   .section:nth-child(2) {

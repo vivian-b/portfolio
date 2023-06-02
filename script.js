@@ -15,7 +15,7 @@ const project = [
   {
     // 1
     name: "Dance Typo. Rhythm",
-    year: "2023",
+    year: "2020",
     src: "ressources/archives/dance.jpg",
     description:
       "Typographic based brochure and eBook to illustrate different types of dances",
@@ -26,7 +26,7 @@ const project = [
   {
     // 2
     name: "GD Brochure",
-    year: "2023",
+    year: "2020",
     src: "ressources/archives/gdb.png",
     description:
       "Detailed and informative program brochure of Dawson's Graphic Design program.",
@@ -36,6 +36,7 @@ const project = [
   {
     // 3
     name: "Type Cube",
+    year: "2020",
     src: "ressources/archives/typecube.jpg",
     description:
       "An artistic paper-based game that reflects an art movement.      ",
