@@ -57,8 +57,9 @@
   }
 
   .triggerLink {
-    cursor:crosshair;
-}
+      cursor: crosshair;
+  }
+
   .popup-overlay {
       /*Hides pop-up when there is no "active" class*/
       visibility: hidden;
@@ -205,40 +206,6 @@
 
   /* */
 
-  .section1,
-  .section2,
-  .section3,
-  .section4 {
-
-      display: grid;
-      grid-template-columns: 0.85fr 1fr;
-      padding: 2.5%;
-  }
-
-  .section1 {
-    grid-template-rows: 1fr;
-}
-
-  .section2 {
-      grid-template-rows: 1.1fr 1fr;
-      row-gap: 5%;
-  }
-
-  .section3 {
-
-      grid-row: 3;
-
-      grid-template-rows: 1.1fr 1fr;
-      row-gap: 5%;
-      background-color: white;
-
-  }
-
-  .section4 {
-      grid-row: 4;
-      row-gap: 5%;
-  }
-
 
 
   .homeText {
@@ -297,7 +264,6 @@
     grid-column: 3;
     grid-row: 1;
     align-self: center;
-
 } */
 
   .navL {
@@ -308,16 +274,13 @@
 
   .navM {
       align-self: center;
-
       grid-column: 2;
   }
 
   .navB {
-      justify-self: center;
       align-self: end;
       position: absolute;
-
-      grid-column: 2;
+      margin: 2vh;
 
   }
 
@@ -326,7 +289,6 @@
       font-size: 80%;
       grid-row: 3/3;
       grid-column: 2/3;
-
   }
 
   .bottomLine {
@@ -418,14 +380,11 @@
 
   .nav-container2 {
       width: 100vw;
-      height: 10vh;
       background-color: rgba(255, 255, 255, 0.8);
       border-bottom: white solid 1px;
-      filter: blur(80);
-      grid-row: 1;
       display: grid;
-      grid-template-columns: 7vw 1fr;
-      padding: 1.5% 2% 0 2%;
+      grid-template-columns: 1fr 1fr;
+      padding: 1% 2%;
 
       position: fixed;
 
@@ -439,7 +398,6 @@
 
       z-index: 3;
   }
-
 
   /*  */
 
@@ -538,7 +496,7 @@
       grid-template-columns: 12% 40% 10% 1fr;
       grid-template-rows: 20% auto auto;
       row-gap: 2vh;
-column-gap: 1%;
+      column-gap: 1%;
   }
 
   .projectName,
@@ -652,7 +610,6 @@ column-gap: 1%;
   }
 
   .projectPreview {
-      background-color: grey;
       grid-column: 2/4;
       grid-row: 2;
 
@@ -679,7 +636,7 @@ column-gap: 1%;
       grid-column: 2;
       padding: 7%;
 
-      align-self: end;
+      align-self: center;
   }
 
   .caseText {
@@ -691,46 +648,25 @@ column-gap: 1%;
   }
 
   .caseText2 {
-      font-size: 90%;
+      font-size: 106%;
       color: black;
 
       font-weight: 300;
-      line-height: 1.6em;
+      line-height: 1.5em;
+      margin: 2vh 10vh 0 0;
   }
 
-  .projectDisplay {
-      grid-row: 4;
-      grid-column: 2/4;
-      scroll-snap-align: start;
-      padding-top: 10vh;
 
-  }
-
-  .projectEnd {
-      grid-row: 6;
-      grid-column: 1;
-      scroll-snap-align: start;
-      margin-left: 2vw;
-
-  }
-
-  .projectEnd h3 {
+  .projectBotNav h3 {
       margin-top: 15%;
   }
 
-  .projectsEnd {
-      grid-row: 6;
-      grid-column: 2/4;
-      align-self: center;
-      margin-top: 25%;
-
-  }
 
   .projectsEnd a {
       display: block;
       border-bottom: rgba(0, 0, 0, 0.2) 1.5px solid;
       font-weight: 200;
-      margin-bottom: 1vh;
+      margin-bottom: 2vh;
       padding-bottom: 1.5%;
       padding-left: 2;
       transition: all 0.5s;
@@ -749,13 +685,37 @@ column-gap: 1%;
       padding: 2.5% 0% 2% 0%;
   }
 
-  .projectClose {
-      color: aliceblue;
+  .projectDisplay1 {
+      grid-row: 4;
+      grid-column: 2/4;
+      scroll-snap-align: start;
+      padding-top: 10vh;
+  }
 
+  .projectDisplay2 {
       margin-top: 2%;
       grid-row: 5;
       grid-column: 2/4;
       width: 90%;
+      scroll-snap-align: end;
+  }
+
+  .projectBotNav {
+      grid-row: 7;
+      grid-column: 1;
+      scroll-snap-align: end;
+      margin-left: 2vw;
+      /* border-top: black solid 2px; */
+  }
+
+
+  .projectsEnd {
+      grid-row: 7;
+      grid-column: 2/4;
+      align-self: center;
+      margin-top: 25%;
+      scroll-snap-align: start;
+
   }
 
   .listedProjects {
@@ -907,7 +867,7 @@ column-gap: 1%;
 
   .galleryImg3:hover,
   .color3 {
-      background-color: rgb(251, 82, 82);
+      background-color: rgb(255, 77, 137);
   }
 
   .galleryImg4 {
@@ -925,7 +885,7 @@ column-gap: 1%;
 
   .galleryImg5:hover,
   .color5 {
-      background-color: rgb(255, 213, 0);
+      background-color: rgb(255, 228, 0);
   }
 
   .galleryImg6 {
@@ -960,42 +920,54 @@ column-gap: 1%;
       opacity: 100;
   }
 
-  .container {
+  #grid-container {
+    max-height: 100vh;
+      display: grid;
+      grid-template-rows: repeat(4, 100vh);
       position: relative;
-      width: 100%;
-      height: 100vh;
+
       scroll-behavior: smooth;
       overflow: auto;
-      /* scroll-snap-type: y mandatory; */
+      scroll-snap-type: y mandatory;
   }
 
   .section {
       width: 100%;
-      height: 100vh;
-      background-size: cover;
+      display: grid;
+      grid-template-columns: 0.85fr 1fr;
+      padding: 2.5%;
       scroll-snap-align: start;
+      height: 100vh;
+
   }
 
-  
-  /* .section:nth-child(1) {
-    display: grid;
-grid-template-columns: 1fr 1fr;
-  } */
+  /*   
+  .section1,
+  .section2,
+  .section3,
+  .section4 {
+  }
+   */
+
+
+  .section:nth-child(1) {
+      grid-row: 1;
+  }
 
   .section:nth-child(2) {
-      background-color: black;
-
+      grid-row: 2;
   }
 
   .section:nth-child(3) {
       background-color: white;
-
+      grid-row: 3;
   }
 
   .section:nth-child(4) {
       background-color: white;
-
+      grid-row: 4;
   }
+
 
   #grid-container2 {
       height: 100vh;
@@ -1013,15 +985,15 @@ grid-template-columns: 1fr 1fr;
 
   }
 
-  #grid-container3 {
+  #grid-containerCase {
       height: 100vh;
 
       display: grid;
       grid-template-columns: 40vw 60vw;
-      grid-template-rows: 10vh 60vh 30vh 75vh 60vh 70vh;
-
+      grid-template-rows: 10vh 60vh 30vh 100vh 90vh 80vh;
       position: relative;
       width: 100%;
+
       scroll-behavior: smooth;
       overflow: auto;
       scroll-snap-type: y mandatory;
