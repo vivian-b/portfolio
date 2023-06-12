@@ -54,6 +54,7 @@
 
   .trigger {
       cursor: unset;
+      margin-right: 100%;
   }
 
   .triggerLink {
@@ -162,7 +163,7 @@
 
   .caseH2 {
       font-weight: 200;
-      font-size: 420%;
+      font-size: 350%;
       grid-row: 3;
       grid-column: 1;
       align-self: end;
@@ -170,10 +171,18 @@
       padding: 2%;
   }
 
+  .galleryYear, .galleryTitle, .galleryTag {
+    color: white;
+    filter: drop-shadow(2px 0 3px rgba(0, 0, 0, 0.7))
+}
+
+
   .galleryYear {
       justify-self: end;
       color: white;
       grid-row: 1;
+      filter: drop-shadow(0 0 0 black)
+
   }
 
   .galleryTitle {
@@ -190,10 +199,6 @@
       font-size: 85%;
       color: white;
       grid-row: 3;
-  }
-
-  .galleryTitle {
-      filter: drop-shadow(1px 1px 3px rgba(205, 205, 205, 0.582));
   }
 
 
@@ -247,8 +252,11 @@
       align-self: center;
 
       transition: all 0.2s;
-
   }
+  
+.homeH3:hover{
+    text-shadow: 2px 2px 2px rgb(196, 196, 196);
+}
 
   .homeList {
       grid-column: 1;
@@ -296,7 +304,7 @@
       color: rgba(255, 255, 255, 0);
       transition: all 0.2s;
       width: 5vh;
-      text-align: center;
+
       padding-bottom: 1%;
       font-weight: 100;
       font-size: 60%;
@@ -306,7 +314,7 @@
 
   .bottomLine:hover {
       border-bottom: rgb(255, 255, 255, 0.9) 1.9px solid;
-      width: 10vh;
+      width: 8vh;
       padding-bottom: 3%;
       color: white;
   }
@@ -433,11 +441,6 @@
 
       cursor: pointer;
       transition: all 0.2s;
-  }
-
-  .ltv {
-      color: rgb(50, 50, 50);
-      font-size: 50%;
   }
 
   .LnG {
@@ -636,7 +639,7 @@
       grid-column: 2;
       padding: 7%;
 
-      align-self: center;
+      align-self: end;
   }
 
   .caseText {
@@ -656,11 +659,10 @@
       margin: 2vh 10vh 0 0;
   }
 
-
   .projectBotNav h3 {
-      margin-top: 15%;
+      margin-top: 10%;
+      font-size: 280%;
   }
-
 
   .projectsEnd a {
       display: block;
@@ -674,6 +676,7 @@
 
   .projectsEnd a:hover {
       border-bottom: black 1.5px solid;
+      margin-left: 2vw;
   }
 
   .listSP {
@@ -700,12 +703,21 @@
       scroll-snap-align: end;
   }
 
+  .projectDisplay3 {
+    margin-top: 30%;
+    grid-row: 6;
+    grid-column: 2/4;
+    width: 95%;
+    scroll-snap-align: start;
+}
+
+
   .projectBotNav {
       grid-row: 7;
       grid-column: 1;
-      scroll-snap-align: end;
       margin-left: 2vw;
-      /* border-top: black solid 2px; */
+      align-self: end;
+      padding-bottom: 5%;
   }
 
 
@@ -713,8 +725,7 @@
       grid-row: 7;
       grid-column: 2/4;
       align-self: center;
-      margin-top: 25%;
-      scroll-snap-align: start;
+      scroll-snap-align: end;
 
   }
 
@@ -914,6 +925,7 @@
 
       z-index: 20;
       transition: all 0.45s;
+      text-shadow: 2px 2px black;
   }
 
   .galleryContainer:hover {
