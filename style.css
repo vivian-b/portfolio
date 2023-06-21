@@ -651,7 +651,7 @@
   }
 
   .caseText2 {
-      font-size: 106%;
+      font-size: 95%;
       color: black;
 
       font-weight: 300;
@@ -659,6 +659,26 @@
       margin: 2vh 10vh 0 0;
   }
 
+  .logogif{
+    width: 10vw;
+  }
+.imageCase {
+    width: 50vw; 
+    height: 40%; 
+    object-fit: cover;
+    margin-top: 2%;
+}
+
+.imageH {
+    max-height: 40vh; 
+    height: auto;
+}
+
+.imageCaseCover {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+}
   .projectBotNav h3 {
       margin-top: 10%;
       font-size: 280%;
@@ -704,11 +724,10 @@
   }
 
   .projectDisplay3 {
-    margin-top: 30%;
+    margin-top: 15vh;
     grid-row: 6;
     grid-column: 2/4;
-    width: 95%;
-    scroll-snap-align: start;
+    scroll-snap-align:start;
 }
 
 
@@ -855,7 +874,7 @@
   }
 
   .galleryImg1 {
-      background-image: url("ressources/GP_miel.png");
+      background-image: url("ressources/casestudy/1_ml/ml4.png");
   }
 
   .galleryImg1:hover,
@@ -864,16 +883,16 @@
   }
 
   .galleryImg2 {
-      background-image: url("ressources/GP_checkit.png");
+      background-image: url("ressources/casestudy/2_chk/chk2.jpg");
   }
 
   .galleryImg2:hover,
   .color2 {
-      background-color: rgb(174, 87, 250);
+      background-color: rgb(204, 102, 255);
   }
 
   .galleryImg3 {
-      background-image: url("ressources/GP_heya.png");
+      background-image: url("ressources/archives/heya.png");
   }
 
   .galleryImg3:hover,
@@ -891,7 +910,7 @@
   }
 
   .galleryImg5 {
-      background-image: url("ressources/home_gdb.png");
+      background-image: url("ressources/casestudy/5_gdb/gdb4.jpeg");
   }
 
   .galleryImg5:hover,
@@ -1131,7 +1150,25 @@
           font-size: 150%;
       }
 
+      .imageCase {
+        width: 45vw; 
+        height: 35vh; 
+        /* 
+        object-fit: cover;
+        margin-top: 2%; */
+    }
+    
+    .imageCaseDouble {
+        height: 35%; 
+    }
 
+    .imageH {
+        height: 90%; 
+    }
+
+    .projectDisplay3 {
+        margin-top: 25vh;
+    }
   }
 
   /* 800 to 1080px + */
@@ -1142,56 +1179,6 @@
 
   /* < 800px (less) */
   @media (max-width: 800px) {
-
-      #grid-container {
-          grid-template-columns: 1fr;
-          grid-template-rows: 150vh 10vh 20vh;
-          padding: 0;
-      }
-
-      #main-section {
-          padding: 0;
-      }
-
-      #main-article {
-          border: 0px;
-          grid-template-rows: 10vh 35vh 25vh;
-          margin-bottom: 15%;
-          padding: 0;
-          margin-bottom: 15vh;
-      }
-
-      article h1,
-      #intro {
-          padding-left: 20px;
-      }
-
-      h1 {
-          font-size: 260%;
-          padding-top: 20px;
-
-      }
-
-      #intro {
-          grid-row: 3/3;
-          grid-column: 1/3;
-
-          font-size: 130%;
-      }
-
-      .main-title {
-          justify-self: start;
-
-      }
-
-      .image {
-          grid-row: 2/2;
-          grid-column: 1/2;
-          width: 100vw;
-          height: 100%;
-          background: url(https://www.ctvnews.ca/polopoly_fs/1.5358975.1616523835!/httpImage/image.jpg_gen/derivatives/landscape_960/image.jpg) no-repeat center;
-
-      }
 
 
 

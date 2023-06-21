@@ -27,7 +27,7 @@ const project = [
     // 2
     name: "GD Brochure",
     year: "2020",
-    src: "ressources/archives/gdb.png",
+    src: "ressources/archives/gdb.jpeg",
     description:
       "Detailed and informative program brochure of Dawson's Graphic Design program.",
     tools: "Adobe InDesign, Adobe Illustrator",
@@ -133,13 +133,23 @@ const project = [
   },
   {
     // 13
-    name: "Miel MTL Ad",
+    name: "Miel MTL remake",
     year: "2023",
     src: "ressources/GP_miel.png",
     description:
       "Rebrand an existing company’s brand identity, including its stationery and packaging.",
     tools: "Adobe Illustrator, Blender 3.1",
-    tags: "3D modeling, branding, packaging, logo design, montage",
+    tags: "3D modeling, branding, packaging, logo design",
+  },
+  {
+    // 14
+    name: "Video Reel",
+    year: "2023",
+    src: "ressources/archives/reel.jpg",
+    description:
+      "Make a self-promotion video reel to showcase some projects.",
+    tools: "Adobe After Effects",
+    tags: "motion graphics, logo",
   },
 ];
 
