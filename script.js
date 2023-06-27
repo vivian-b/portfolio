@@ -116,7 +116,7 @@ const project = [
     // 11
     name: "Heya!",
     year: "2022",
-    src: "ressources/archives/heya.png",
+    src: "ressources/casestudy/3_heya/hy1.jpg",
     description:
       "Applying UI/UX principles to conceptualize an ideal dating app with gamification features.    ",
     tools: "Adobe XD, Adobe Illustrator, Adobe After Effects",
@@ -126,7 +126,7 @@ const project = [
     // 12
     name: "Check It",
     year: "2023",
-    src: "ressources/GP_checkit.png",
+    src: "ressources/casestudy/2_chk/chk3.jpg",
     description: "News aggregator app for millenials.",
     tools: "Figma, Adobe Illustrator",
     tags: "app design, UI / UX, logo design, branding",
