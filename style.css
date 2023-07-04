@@ -1317,7 +1317,6 @@
 
       .projectPreview {
           grid-row: 2;
-
       }
 
       .projectColor,
@@ -1370,4 +1369,16 @@
           height: auto;
       }
 
+      .homeText{
+        font-size: 120%;
+      }
+
+      .homeh2{
+        font-size: 260%;
+        padding-top: 4%;
+      }
+
+      .homeH3{
+        font-size: 200%;
+      }
   }
