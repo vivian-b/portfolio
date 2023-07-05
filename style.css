@@ -285,6 +285,7 @@
   .navM {
       align-self: center;
       grid-column: 2;
+      padding-left: 5vw;
   }
 
   .navB {
