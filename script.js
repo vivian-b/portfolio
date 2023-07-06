@@ -8,7 +8,7 @@ const project = [
     year: "2020",
     src: "ressources/GP_printemps.png",
     description:
-      "Creative motion graphics-based video promotion for the event/festival.",
+      "Create a motion graphics-based video promotion for the event/festival.",
     tools: "Adobe Illustrator, Adobe Photoshop, Adobe After Effects",
     tags: "motion graphics, animation",
   },
@@ -18,7 +18,7 @@ const project = [
     year: "2020",
     src: "ressources/archives/dance.jpg",
     description:
-      "Typographic based brochure and eBook to illustrate different types of dances",
+      "Design a typographic based brochure and eBook to illustrate different types of dances",
     tools:
       "Adobe Illustrator, Adobe InDesign, Adobe Photoshop, Adobe After Effects",
     tags: "publication, layout, typography, motion",
@@ -29,7 +29,7 @@ const project = [
     year: "2020",
     src: "ressources/archives/gdb.jpeg",
     description:
-      "Detailed and informative program brochure of Dawson's Graphic Design program.",
+      "Design a detailed and informative program brochure of Dawson's Graphic Design program.",
     tools: "Adobe InDesign, Adobe Illustrator",
     tags: "publication,layout,typography",
   },
@@ -39,7 +39,7 @@ const project = [
     year: "2020",
     src: "ressources/archives/typecube.jpg",
     description:
-      "An artistic paper-based game that reflects an art movement.      ",
+      "Create an artistic paper-based game that reflects an art movement.      ",
     tools: "Adobe InDesign, Adobe Illustrator",
     tags: "paper craft, typography, printing",
   },
@@ -49,7 +49,7 @@ const project = [
     year: "2020",
     src: "ressources/archives/2020.jpg",
     description:
-      "A duo poster designed for the Dawson Graphic Design 2020 Vernissage exhibition.      ",
+      "Create duo poster designed for the Dawson Graphic Design 2020 Vernissage exhibition.      ",
     tools: "Adobe Photoshop, Adobe Illustrator ",
     tags: "poster design, research creation",
   },
@@ -69,7 +69,7 @@ const project = [
     year: "2021",
     src: "ressources/archives/runbunrun.png",
     description:
-      "Small Javascript arcade-like based game where the player is a bunny trying to collect carrots and avoid daggers flying towards them.",
+      "Create a small Javascript arcade-like based game where the player is a bunny trying to collect carrots and avoid daggers flying towards them.",
     tools: "Visual Studio Code, Procreate, Photoshop",
     tags: "game design, illustration, coding, Javascript",
   },
@@ -79,7 +79,7 @@ const project = [
     year: "2021",
     src: "ressources/archives/orpheon.png",
     description:
-      "Building a prototype website with multiple pages for a fictional company. The logo and identity of the brand are designed based on research from existing labels.     ",
+      "Build a prototype website with multiple pages for a fictional company. The logo and identity of the brand are designed based on research from existing labels.     ",
     tools: "Adobe XD, Adobe Illustrator",
     tags: "web design, branding, logo design",
   },
@@ -89,7 +89,7 @@ const project = [
     year: "2021",
     src: "ressources/home_prey.png",
     description:
-      "Making a narrative sculpture with a minimalistic art style. Accompanied by a video montage to present the piece in detail.      ",
+      "Make a narrative sculpture with a minimalistic art style. Accompanied by a video montage to present the piece in detail.      ",
     tools: "Blender 3.0",
     tags: "3D modeling",
   },
@@ -99,7 +99,7 @@ const project = [
     year: "2022",
     src: "ressources/archives/22.png",
     description:
-      "An experiment through research creation to create a design based on peoples preferences from a design survey.",
+      "Create a design based on peoples preferences from a design survey.",
     tools: "Adobe Photoshop, Adobe Illustrator ",
     tags: "poster design, research creation",
   },
@@ -108,7 +108,7 @@ const project = [
     name: "Cycle of money",
     src: "ressources/archives/money.png",
     description:
-      "Short typographic animation to illustrate the theme of speed through money.",
+      "Create a short typographic animation to illustrate the theme of speed through money.",
     tools: "Adobe After Effects, Adobe Illustrator",
     tags: "motion graphics, typography, B&W",
   },
@@ -118,7 +118,7 @@ const project = [
     year: "2022",
     src: "ressources/casestudy/3_heya/hy1.jpg",
     description:
-      "Applying UI/UX principles to conceptualize an ideal dating app with gamification features.    ",
+      "Apply UI/UX principles to conceptualize an ideal dating app with gamification features.    ",
     tools: "Adobe XD, Adobe Illustrator, Adobe After Effects",
     tags: "app design, UI/UX, motion graphics, branding,",
   },
@@ -127,7 +127,7 @@ const project = [
     name: "Check It",
     year: "2023",
     src: "ressources/casestudy/2_chk/chk3.jpg",
-    description: "News aggregator app for millenials.",
+    description: "Create an news aggregator app for millenials with UI/UX principles in mind.",
     tools: "Figma, Adobe Illustrator",
     tags: "app design, UI / UX, logo design, branding",
   },
