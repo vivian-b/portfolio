@@ -151,6 +151,16 @@ const project = [
     tools: "Adobe After Effects",
     tags: "motion graphics, logo",
   },
+  {
+    // 15
+    name: "Bake Sale",
+    year: "2023",
+    src: "ressources/archives/bakesale.png",
+    description:
+      "Make a post to promote a bake sale",
+    tools: "Adobe Illustrator",
+    tags: "branding, layout design",
+  },
 ];
 
 function changeImage() {
