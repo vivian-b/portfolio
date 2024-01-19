@@ -153,11 +153,22 @@ const project = [
   },
   {
     // 15
+    name: "Portfolio Website",
+    year: "2023",
+    src: "ressources/archives/website.png",
+    description:
+      "Make a post to promote a bake sale.",
+    tools: "Adobe Photoshop, Visual Studio Code, Figma",
+    tags: "branding, web design, coding (HTML, CSS, JavaScript), logo design",
+
+  },
+  {
+    // 16
     name: "Bake Sale",
     year: "2023",
-    src: "ressources/archives/bakesale.png",
+    src: "ressources/archives/bake_sale.png",
     description:
-      "Make a post to promote a bake sale",
+      "Make a portfolio website to showcase your works.",
     tools: "Adobe Illustrator",
     tags: "branding, layout design",
   },
