@@ -339,7 +339,7 @@
   .nav2 {
       align-self: end;
       font-size: 100%;
-
+      z-index: 2;
   }
 
   .navLogo {
@@ -1180,10 +1180,10 @@
           padding: 1%;
       }
 
-     h4,
-     .casetext,
-        .caseText2{
-        font-size: 125%;
+      h4,
+      .casetext,
+      .caseText2 {
+          font-size: 125%;
       }
 
   }
@@ -1202,16 +1202,18 @@
           grid-template-columns: 10.5vw 1fr;
       }
 
-      h4, .caseText, .caseText2{
-        font-size: 170%;
+      h4,
+      .caseText,
+      .caseText2 {
+          font-size: 170%;
       }
 
-      .projectsEnd{
-        font-size: 150%;
+      .projectsEnd {
+          font-size: 150%;
       }
 
-      .imageCase{
-        height: 30vh;
+      .imageCase {
+          height: 30vh;
       }
   }
 
@@ -1240,7 +1242,7 @@
           font-size: 290%;
       }
 
-   
+
       .navB2 {
           display: none;
       }
@@ -1271,7 +1273,7 @@
       .navLogo {
           width: 50%;
           grid-column: 4;
-       
+
       }
 
 
@@ -1370,16 +1372,17 @@
           height: auto;
       }
 
-      .homeText{
-        font-size: 120%;
+      .homeText {
+          font-size: 120%;
       }
 
-      .homeh2{
-        font-size: 260%;
-        padding-top: 4%;
+      .homeh2 {
+          font-size: 260%;
+          padding-top: 14%;
+          z-index: 1;
       }
 
-      .homeH3{
-        font-size: 200%;
+      .homeH3 {
+          font-size: 200%;
       }
   }
