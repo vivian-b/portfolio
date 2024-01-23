@@ -164,6 +164,28 @@ const project = [
   },
   {
     // 16
+    name: "Suika Leaderboard",
+    year: "2023",
+    src: "ressources/archives/suika.png",
+    description:
+    "Make a board based on players' best score.",
+    tools: "Adobe Illustrator, Google Sheets",
+      tags: "infographics",
+  
+  },
+  {
+    // 17
+    name: "BaseD Taste",
+    year: "2023",
+    src: "ressources/archives/basedtaste.png",
+    description:
+      "Make an infographic for a gameshow",
+    tools: "Adobe Illustrator, Google Sheets",
+    tags: "logo design, infographics",
+
+  },
+  {
+    // 18
     name: "Bake Sale",
     year: "2023",
     src: "ressources/archives/bake_sale.png",
