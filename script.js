@@ -186,13 +186,23 @@ const project = [
   },
   {
     // 18
+    name: "commission site",
+    year: "2023",
+    src: "ressources/archives/commission.png",
+    description:
+      "Make a portfolio website to showcase your works for online commissions.",
+    tools: "carrd",
+    tags: "branding, web design, css",
+  },
+  {
+    // 19
     name: "Bake Sale",
     year: "2023",
     src: "ressources/archives/bake_sale.png",
     description:
-      "Make a portfolio website to showcase your works.",
+      "Make a social media post to promote a bake sale (fundraise for palestine).",
     tools: "Adobe Illustrator",
-    tags: "branding, layout design",
+    tags: "layout design",
   },
 ];
 
