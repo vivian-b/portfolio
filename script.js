@@ -322,7 +322,7 @@ function showSlides() {
     slideIndex = 1;
   }
   slides[slideIndex - 1].style.display = "block";
-  setTimeout(showSlides, 4200); // Change image every X seconds
+  setTimeout(showSlides, 4100); // Change image every X seconds
 }
 
 function scrollFunction() {
