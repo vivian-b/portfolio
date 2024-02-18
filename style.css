@@ -268,13 +268,12 @@
 
   /* first section */
 
-  /* .homeCover {
-    height: 5vh;
-    width: 30vw;
-    grid-column: 3;
-    grid-row: 1;
-    align-self: center;
-} */
+  .homeCover {
+      position: absolute;
+      z-index: 2;
+      justify-self: end;
+      align-self: center;
+  }
 
   .navL {
       grid-column: 1;
@@ -286,6 +285,7 @@
       align-self: center;
       grid-column: 2;
       padding-left: 5vw;
+      z-index: 1;
   }
 
   .navB {
