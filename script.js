@@ -87,7 +87,7 @@ const project = [
     // 8
     name: "Prey",
     year: "2021",
-    src: "ressources/home_prey.png",
+    src: "ressources/home_4.png",
     description:
       "Make a narrative sculpture with a minimalistic art style. Accompanied by a video montage to present the piece in detail.      ",
     tools: "Blender 3.0",
