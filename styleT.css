@@ -1,0 +1,161 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #000000;
+    color: #1a8565;
+}
+
+main {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+#filter-section {
+
+    width: 170px; /* Minimum width for the filter section */
+    padding: 15px;
+    align-self: flex-start; /* Keep it at the top */
+}
+
+#tag-filters-container .tag-filter {
+    display: block; /* Each checkbox on a new line */
+    margin-bottom: 8px;
+}
+
+#tag-filters-container label {
+    margin-left: 5px;
+    cursor: pointer;
+    text-transform: capitalize; /* Make tags look a bit nicer */
+}
+
+#projects-container {
+    flex: 1; /* Takes 3 parts of the space */
+   
+}
+
+.project-card {
+    /* Add your existing .project-card styles here */
+    /* e.g., border, padding, margin, background-color, etc. */
+    padding: 15px;
+    margin-bottom: 15px;
+    color: white;
+    border-bottom: 1px solid #eee;
+}
+
+.project-card h3 {
+    margin-top: 0; /* Or your preferred margin */
+}
+
+.project-card .project-hover-details {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    margin-top: 0; /* No margin when hidden */
+    transition: opacity 0.3s ease-in-out, 
+                max-height 0.4s ease-in-out,
+                margin-top 0.3s ease-in-out; /* Smoothly add margin when appearing */
+}
+
+.project-card:hover .project-hover-details {
+    opacity: 1;
+    max-height: 500px; /* Adjust this value to be larger than your longest expected content */
+    margin-top: 0.8em; /* Add some space between the title and the details when visible */
+}
+
+/* Optional: Style for the description and tools paragraphs themselves */
+.project-card .project-description,
+.project-card .project-tools {
+    font-size: 0.9em;
+    color: #555;
+    line-height: 1.4;
+    margin-bottom: 0.5em; /* Spacing between description and tools, or tools and tags */
+}
+
+.project-card .project-tools {
+    margin-bottom: 0; /* Last item in the hover details */
+}
+
+/* Ensure your image preview CSS is also present */
+#hovered-project-image {
+    width: 100%;
+    height: 300px; /* Example */
+    object-fit: cover;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out; /* Matches IMAGE_PREVIEW_TRANSITION_DURATION_MS */
+}
+/* 
+.project-card .tags span {
+    display: inline-block;
+    background-color: #e9ecef;
+    color: #495057;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 0.8em;
+    margin-right: 5px;
+    margin-bottom: 5px;
+} */
+
+.no-projects {
+    grid-column: 1 / -1; /* Span all columns if grid is active */
+    text-align: center;
+    padding: 20px;
+    font-style: italic;
+    color: #777;
+}
+
+
+   #image-preview-container {
+    width: 300px; /* Or your desired width */
+    height: 200px; /* Or your desired height */
+    margin-bottom: 20px;
+    display: flex; /* To help center content if needed */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden; /* Prevents image overflow */
+}
+
+/* Add this to your existing CSS file or in a <style> tag in your HTML <head> */
+#hovered-project-image {
+    /* Add any other existing styles like width, height, object-fit etc. */
+    width: 100%; /* Example */
+    height: 300px; /* Example */
+    object-fit: cover; /* Example: to maintain aspect ratio and fill container */
+
+    opacity: 1; /* Initial opacity */
+    transition: all 0.2s ease-out; /* Adjust duration and timing function as needed */
+
+}
+#hovered-project-name {
+    margin-top: 1px;
+    font-size: 0.9em;
+    color: #ffffff;
+}
+
+.tags span {
+    background-color: #e0e0e0;
+    padding: 2px 5px;
+    border-radius: 3px;
+    margin-right: 5px;
+    font-size: 0.8em;
+}
+.no-projects {
+    color: #777;
+    font-style: italic;
+}
+
+
+/* style.css (relevant part for filters, if you want to rename or be specific) */
+#category-filters-container .category-filter { /* Or reuse .tag-filter */
+    display: block;
+    margin-bottom: 8px;
+}
+
+#category-filters-container label {
+    margin-left: 5px;
+    cursor: pointer;
+    text-transform: capitalize;
+}

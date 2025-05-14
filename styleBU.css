@@ -52,9 +52,9 @@
       border-bottom: 1px solid black;
   }
 
-  .trigger {
-      cursor: ns-resize;
-  }
+  /* .hoverInteraction {
+      cursor: crosshair;
+  } */
 
 
   #custom-text-cursor {
@@ -68,7 +68,7 @@
       white-space: nowrap;
       z-index: 9999;
       pointer-events: none;
-      transform: translate(-40px, -20px);
+      transform: translate(-80px, -20px);
       transition: left 0.075s linear,
           /* Smooths horizontal movement */
           top 0.075s linear,
@@ -514,17 +514,17 @@
       line-height: 1.5em;
       font-weight: 200;
 
-
+      width: 50vw;
+      height: 20vh;
       position: fixed;
-      margin-left: 55vw;
+      margin-left: 60vw;
       margin-top: 63.5vh;
 
-      display: flexbox;
-      /* display: grid;
+      display: grid;
       grid-template-columns: 12% 40% 10% 1fr;
       grid-template-rows: 20% auto auto;
       row-gap: 2vh;
-      column-gap: 1%; */
+      column-gap: 1%;
   }
 
   .projectName,
@@ -532,12 +532,8 @@
   #projectTag,
   #projectTools {
       font-weight: 500;
-      display: inline;
   }
 
-  /* .grouped{
-    display: flexbox;
-  } */
   .projectName {
       grid-column: 1;
       grid-row: 1;
@@ -568,7 +564,7 @@
       grid-row: 3;
   }
 
-  /* .descriptionListed {
+  .descriptionListed {
       color: white;
 
       font-size: 110%;
@@ -580,17 +576,26 @@
       position: fixed;
       margin-left: 7%;
       padding-top: 25vh;
+      /* pointer-events: none; */
 
       z-index: 20;
-  } */
+  }
 
-
+  .blockHide {
+      background-color: black;
+      width: 50vw;
+      height: 60vh;
+      position: fixed;
+      margin-left: 7%;
+      padding-top: 30vh;
+      pointer-events: none;
+  }
 
   .imagePreview,
   .imageFilter {
-      width: 55vw;
+      width: 40vw;
       height: 60vh;
-      margin-left: 55vw;
+      margin-left: 60vw;
 
       position: fixed;
       transition: all 0.2s;
@@ -778,7 +783,6 @@
       margin-right: 5%;
   }
 
-
   .listedTypes {
       align-self: center;
       grid-row: 2;
@@ -812,7 +816,6 @@
 
       scroll-snap-align: end;
   }
-
 
   .listedText:hover {
       border-bottom: 1px white solid;
@@ -1027,18 +1030,8 @@
   #grid-container2 {
       height: 100vh;
       display: grid;
-      grid-template-columns: 7vw 45vw auto;
-      grid-template-rows: 13vh 16vh auto;
-  }
-
-  .blockHide {
-      background-color: black;
-      width: 45vw;
-      height: 8vh;
-      position: fixed;
-      margin-left: 7%;
-      padding-top: 30vh;
-      pointer-events: none;
+      grid-template-columns: 7vw 50vw 45vw;
+      grid-template-rows: 10vh 50vh auto;
   }
 
   #grid-container2G {
