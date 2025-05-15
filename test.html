@@ -1,48 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project Filter - Categories</title>
-    <link rel="stylesheet" href="styleT.css"> <!-- Same CSS as before -->
-</head>
-<body>
+    <link rel="stylesheet" href="styleT.css" />
+    <!-- Same CSS as before -->
+  </head>
 
-<!-- This is where the hovered project image will appear -->
-<div id="image-preview-container">
-    <img id="hovered-project-image" src="ressources/alogo2.gif" alt="Project Preview">
-    <p id="hovered-project-name"></p>
-</div>
-        
+  <body>
     <main>
-        <aside id="filter-section">
-            <div id="category-filters-container">
-                <div class="category-filter">
-                    <input type="radio" id="filter-all" name="category-filter" value="all" checked>
-                    <label for="filter-all">All Projects</label>
-                </div>
-                <div class="category-filter">
-                    <input type="radio" id="filter-motion" name="category-filter" value="motion">
-                    <label for="filter-motion">Motion Design</label>
-                </div>
-                <div class="category-filter">
-                    <input type="radio" id="filter-print" name="category-filter" value="print">
-                    <label for="filter-print">Print & Layout</label>
-                </div>
-                <div class="category-filter">
-                    <input type="radio" id="filter-web" name="category-filter" value="web">
-                    <label for="filter-web">Web & UI</label>
-                </div>
-            </div>
-        </aside>
+    
+      <aside id="filter-section">
+        <div id="category-filters-container">
+          <div class="category-filter">
+            <input
+              type="radio"
+              id="filter-all"
+              name="category-filter"
+              value="all"
+              checked
+            />
+            <label for="filter-all">All Projects</label>
+          </div>
+          <div class="category-filter">
+            <input
+              type="radio"
+              id="filter-motion"
+              name="category-filter"
+              value="motion"
+            />
+            <label for="filter-motion">Motion Design</label>
+          </div>
+          <div class="category-filter">
+            <input
+              type="radio"
+              id="filter-print"
+              name="category-filter"
+              value="print"
+            />
+            <label for="filter-print">Print & Layout</label>
+          </div>
+          <div class="category-filter">
+            <input
+              type="radio"
+              id="filter-web"
+              name="category-filter"
+              value="web"
+            />
+            <label for="filter-web">Web & UI</label>
+          </div>
+        </div>
+      </aside>
 
-        <section id="projects-container">
-            <!-- Filtered projects will be dynamically inserted here -->
-        </section>
+      <!-- image preview -->
+  <div id="image-preview-container">
+        <img
+          id="hovered-project-image"
+          src="ressources/alogo2.gif"
+          alt="Project Preview"
+        />
+        <p id="hovered-project-name"></p>
+      </div>
+      <section id="projects-container">
+        <!-- Filtered projects will be dynamically inserted here -->
+      </section>
     </main>
 
-    <script src="projects-data.js"></script> <!-- Same project data -->
-    <script src="filters.js"></script> <!-- Same filtering function -->
-    <script src="app.js"></script> <!-- New app logic file -->
-</body>
+    <script src="projects-data.js"></script>
+    <!-- Same project data -->
+
+    <script src="app.js"></script>
+    <!-- New app logic file -->
+  </body>
 </html>

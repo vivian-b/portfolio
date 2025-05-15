@@ -1,67 +1,139 @@
-body {
-    font-family: sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;300;400;700;800&display=swap');
+
+* {
     margin: 0;
-    background-color: #000000;
-    color: #1a8565;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+body {
+    font-size: 110%;
+    line-height: 105%;
+    background-color: black;
+    color: #ffffff;
 }
 
 main {
     display: flex;
-    gap: 20px;
-    padding: 20px;
-    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    gap: 2%;
+    flex-wrap: wrap;
 }
 
-#filter-section {
+/* radio filter section*/
 
-    width: 170px; /* Minimum width for the filter section */
+#filter-section {
+    width: 200px;
     padding: 15px;
-    align-self: flex-start; /* Keep it at the top */
+    font-weight: 200;
+    position: fixed;
 }
 
 #tag-filters-container .tag-filter {
-    display: block; /* Each checkbox on a new line */
-    margin-bottom: 8px;
+    display: block;
+
 }
 
 #tag-filters-container label {
     margin-left: 5px;
     cursor: pointer;
-    text-transform: capitalize; /* Make tags look a bit nicer */
+    text-transform: capitalize;
+
 }
 
+/* project list container*/
 #projects-container {
-    flex: 1; /* Takes 3 parts of the space */
-   
+    width: 35vw;
+margin-left: auto;
 }
 
+/* radio filters selection*/
+
+#category-filters-container .category-filter input[type="radio"] {
+    display: none;
+}
+
+#category-filters-container .category-filter {
+    padding: 4px 4px;
+    cursor: pointer;
+    margin-bottom: 8px;
+
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    font-weight: 100;
+    color: #b3b3b3;
+
+}
+
+#category-filters-container .category-filter:hover {
+    border-left: 3px white solid;
+    margin-left: 8px;
+    transition: all 0.3s ease-in-out;
+    color: white;
+}
+
+#category-filters-container .category-filter.selected {
+    background-color: #e0efff;
+    border-left: 1px white solid;
+    font-weight: 600;
+    margin-left: 0px;
+    border-radius: 6px;
+    padding: 9px;
+}
+
+#category-filters-container .category-filter.selected label {
+    color: #000000;
+}
+
+#category-filters-container .category-filter label {
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+/* SECTION: Project Cards */
 .project-card {
-    /* Add your existing .project-card styles here */
-    /* e.g., border, padding, margin, background-color, etc. */
-    padding: 15px;
-    margin-bottom: 15px;
+    padding: 4% 0.2%;
     color: white;
     border-bottom: 1px solid #eee;
 }
 
-.project-card h3 {
-    margin-top: 0; /* Or your preferred margin */
+.project-year {
+    font-size: 16px;
 }
 
 .project-card .project-hover-details {
     opacity: 0;
     max-height: 0;
     overflow: hidden;
-    margin-top: 0; /* No margin when hidden */
-    transition: opacity 0.3s ease-in-out, 
-                max-height 0.4s ease-in-out,
-                margin-top 0.3s ease-in-out; /* Smoothly add margin when appearing */
+    margin-top: 0;
+    transition: opacity 0.3s ease-in-out,
+        max-height 0.4s ease-in-out,
+        margin-top 0.3s ease-in-out;
 }
 
 .project-card:hover .project-hover-details {
     opacity: 1;
-    max-height: 500px; /* Adjust this value to be larger than your longest expected content */
-    margin-top: 0.8em; /* Add some space between the title and the details when visible */
+    padding: 19px 0px;
+    max-height: 500px;
+
+}
+
+.project-card:hover {
+    background-color: white;
+    color: #222222;
+    border-left: 9px Solid#ffffff;
+    border-radius: 4px;
+    transform: scale(1.17);
+    margin-left: 15px;
+    padding: 5% 3%;
+    box-shadow: 0 4px 28px 0 rgba(0, 0, 0, 0.829), 0 60px 20px 0 rgba(0, 0, 0, 0.589);
+    transition: all 0.1s ease-in-out;
+
+}
+
+.project-card:hover span {
+    color: white;
+    transition: opacity 0.3s ease-in-out;
 }
 
 /* Optional: Style for the description and tools paragraphs themselves */
@@ -70,92 +142,86 @@ main {
     font-size: 0.9em;
     color: #555;
     line-height: 1.4;
-    margin-bottom: 0.5em; /* Spacing between description and tools, or tools and tags */
+    margin-bottom: 0.5em;
 }
 
 .project-card .project-tools {
-    margin-bottom: 0; /* Last item in the hover details */
+    margin-bottom: 0;
+    /* Last item in the hover details */
 }
 
 /* Ensure your image preview CSS is also present */
 #hovered-project-image {
     width: 100%;
-    height: 300px; /* Example */
+    height: 300px;
+    /* Example */
     object-fit: cover;
     opacity: 1;
-    transition: opacity 0.3s ease-in-out; /* Matches IMAGE_PREVIEW_TRANSITION_DURATION_MS */
+    transition: opacity 0.3s ease-in-out;
+    /* Matches IMAGE_PREVIEW_TRANSITION_DURATION_MS */
 }
-/* 
-.project-card .tags span {
-    display: inline-block;
-    background-color: #e9ecef;
-    color: #495057;
-    padding: 3px 8px;
-    border-radius: 12px;
-    font-size: 0.8em;
-    margin-right: 5px;
-    margin-bottom: 5px;
-} */
 
 .no-projects {
-    grid-column: 1 / -1; /* Span all columns if grid is active */
+    grid-column: 1 / -1;
+    /* Span all columns if grid is active */
     text-align: center;
     padding: 20px;
     font-style: italic;
     color: #777;
 }
 
-
-   #image-preview-container {
-    width: 300px; /* Or your desired width */
-    height: 200px; /* Or your desired height */
-    margin-bottom: 20px;
-    display: flex; /* To help center content if needed */
+#image-preview-container {
+    width: 45vw;
+    height: 100vh;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    overflow: hidden; /* Prevents image overflow */
+    overflow: hidden;
+    position: fixed;
+    margin-left: 15vw;
 }
 
-/* Add this to your existing CSS file or in a <style> tag in your HTML <head> */
 #hovered-project-image {
-    /* Add any other existing styles like width, height, object-fit etc. */
-    width: 100%; /* Example */
-    height: 300px; /* Example */
-    object-fit: cover; /* Example: to maintain aspect ratio and fill container */
-
-    opacity: 1; /* Initial opacity */
-    transition: all 0.2s ease-out; /* Adjust duration and timing function as needed */
-
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    opacity: 1;
+    transition: all 0.2s ease-out;
 }
+
 #hovered-project-name {
-    margin-top: 1px;
-    font-size: 0.9em;
+    margin-top: 20px;
+    font-size: 1.2em;
     color: #ffffff;
+    font-weight: 400;
 }
 
-.tags span {
-    background-color: #e0e0e0;
-    padding: 2px 5px;
-    border-radius: 3px;
-    margin-right: 5px;
+/* SECTION: TAGS */
+h3 {
+    padding-bottom: 3%;
+}
+
+.tag-grouping {
+    padding-top: 2px;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+    font-weight: 300;
+    font-size: 1em;
+
+}
+
+/* Style for each individual tag span */
+.tags>.tag-item,
+.tags>span {
+    white-space: nowrap;
+    background-image: linear-gradient(rgb(44, 44, 44), rgba(43, 43, 43, 0.788));
+    padding: 3px 9px;
+    border-radius: 4px;
     font-size: 0.8em;
-}
-.no-projects {
-    color: #777;
-    font-style: italic;
-}
-
-
-/* style.css (relevant part for filters, if you want to rename or be specific) */
-#category-filters-container .category-filter { /* Or reuse .tag-filter */
-    display: block;
-    margin-bottom: 8px;
-}
-
-#category-filters-container label {
-    margin-left: 5px;
-    cursor: pointer;
-    text-transform: capitalize;
 }
