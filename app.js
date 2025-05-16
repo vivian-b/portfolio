@@ -1,11 +1,11 @@
 // --- Global constants for image preview ---
 const imagePreviewDiv = document.getElementById("image-preview-container");
+const hoveredProjectLink = document.getElementById("hovered-project-link"); // NEW
 const hoveredImage = document.getElementById("hovered-project-image");
 const hoveredProjectName = document.getElementById("hovered-project-name");
 
 const DEFAULT_PREVIEW_IMAGE_SRC = "ressources/alogo2.gif";
-const DEFAULT_PREVIEW_TEXT = " ";
-
+const DEFAULT_PREVIEW_TEXT = "";
 const IMAGE_PREVIEW_TRANSITION_DURATION_MS = 300;
 let imagePreviewTransitionTimeoutId = null;
 
@@ -36,6 +36,11 @@ document.addEventListener("DOMContentLoaded", () => {
     if (hoveredProjectName) {
       hoveredProjectName.textContent = DEFAULT_PREVIEW_TEXT;
     }
+    if (hoveredProjectLink) {
+      // Reset link
+      hoveredProjectLink.href = "#";
+      hoveredProjectLink.style.cursor = "default"; // Reset cursor
+    }
 
     if (!projectsToDisplay || projectsToDisplay.length === 0) {
       projectsContainer.innerHTML =
@@ -46,10 +51,23 @@ document.addEventListener("DOMContentLoaded", () => {
     projectsToDisplay.forEach((project) => {
       const card = document.createElement("div");
       card.classList.add("project-card");
+      const hasLink = project.links && project.links !== "none" && project.links.trim() !== "";
+        if (hasLink) {
+        card.classList.add("project-card-clickable"); // For CSS styling (e.g., cursor)
+        card.addEventListener("click", (e) => {
+          // Prevent click if a text selection is happening or a nested link/button was clicked
+          if (window.getSelection().toString() || e.target.closest('a, button')) {
+            return;
+          }
+          window.open(project.links, "_blank", "noopener,noreferrer");
+        });
+      }
 
-    let tagsHTML = "";
+      let tagsHTML = "";
       if (project.tags && project.tags.length > 0) {
-        tagsHTML = project.tags.map((tag) => `<span class="tag-item">${tag}</span>`).join("");
+        tagsHTML = project.tags
+          .map((tag) => `<span class="tag-item">${tag}</span>`)
+          .join("");
       }
 
       const projectName = project.name || "Unnamed Project";
@@ -58,14 +76,16 @@ document.addEventListener("DOMContentLoaded", () => {
       const projectTools = project.tools || "N/A";
 
       //  ${project.src ? `<img src="${project.src}" alt="${projectName} thumbnail">` : ''}
-  card.innerHTML = `
+      card.innerHTML = `
                <h3>${projectName}</h3>
                 <div class="project-hover-details">
-                    <p class="project-year">${ projectYear ? `${projectYear}` : ""} </p>
+                    <p class="project-year">${
+                      projectYear ? `${projectYear}` : ""
+                    } </p>
                     <p class="project-description">${projectDesc}</p>
                     <p class="project-tools"><strong>Tools:</strong> ${projectTools}</p>
                 </div>
-                ${ 
+                ${
                   tagsHTML
                     ? `<div class="tag-grouping"><div class="tags">${tagsHTML}</div></div>`
                     : ""
@@ -73,9 +93,12 @@ document.addEventListener("DOMContentLoaded", () => {
             `;
 
       card.addEventListener("mouseenter", () => {
-        if (!hoveredImage || !hoveredProjectName) return;
+        if (!hoveredImage || !hoveredProjectName || !hoveredProjectLink) return; // Check for link element too
         clearTimeout(imagePreviewTransitionTimeoutId);
         hoveredImage.style.opacity = 0;
+        hoveredProjectLink.href = "#";
+        hoveredProjectLink.style.cursor = "default";
+
         imagePreviewTransitionTimeoutId = setTimeout(() => {
           if (project.src) {
             hoveredImage.src = project.src;
@@ -86,23 +109,30 @@ document.addEventListener("DOMContentLoaded", () => {
             hoveredImage.alt = "No preview available";
             hoveredProjectName.textContent = `${projectName} (No Preview)`;
           }
+             if (project.links && project.links !== "none" && project.links.trim() !== "") {
+            hoveredProjectLink.href = project.links;
+            hoveredProjectLink.style.cursor = "pointer"; // Indicate it's clickable
+          } else {
+            hoveredProjectLink.href = "#"; // Or "javascript:void(0);" to prevent page jump
+            hoveredProjectLink.style.cursor = "default"; // Not clickable
+          }
           hoveredImage.style.opacity = 1;
         }, IMAGE_PREVIEW_TRANSITION_DURATION_MS);
       });
 
-      card.addEventListener("mouseleave", () => {
-        if (!hoveredImage || !hoveredProjectName) return;
+       card.addEventListener("mouseleave", () => {
+        if (!hoveredImage || !hoveredProjectName || !hoveredProjectLink) return;
         clearTimeout(imagePreviewTransitionTimeoutId);
-
         imagePreviewTransitionTimeoutId = setTimeout(() => {
-          hoveredImage.alt = "Project Preview";
-          hoveredImage.style.opacity = 0.45;
+
+          hoveredImage.style.opacity = 0.5;
         }, IMAGE_PREVIEW_TRANSITION_DURATION_MS);
       });
 
       projectsContainer.appendChild(card);
     });
   }
+
 
   // --- 2. Tag Filtering Logic ---
   function getAllUniqueTags(projectsData) {
@@ -290,5 +320,63 @@ document.addEventListener("DOMContentLoaded", () => {
     // handleTagFilterChange(); // Or applyAllFilters();
   } else {
     renderProjects(projects);
+  }
+});
+
+// cursor
+document.addEventListener("DOMContentLoaded", () => {
+  const customCursor = document.getElementById("custom-text-cursor");
+  const targetElements = document.querySelectorAll(".hoverInteraction"); // Your target class
+
+  if (!customCursor) {
+    console.error("Custom cursor element not found!");
+    return;
+  }
+
+  const defaultCursorBgColor = getComputedStyle(customCursor).backgroundColor;
+  const defaultCursorTextColor = getComputedStyle(customCursor).color;
+
+  targetElements.forEach((targetEl) => {
+    targetEl.addEventListener("mouseenter", (e) => {
+      const cursorText = targetEl.getAttribute("data-cursor-text") || "Action";
+      const cursorBgColor = targetEl.getAttribute("data-cursor-bg-color");
+      const cursorTextColor = targetEl.getAttribute("data-cursor-text-color"); // Optional
+
+      customCursor.textContent = cursorText;
+
+      // Set background color
+      if (cursorBgColor) {
+        customCursor.style.backgroundColor = cursorBgColor;
+      } else {
+        customCursor.style.backgroundColor = defaultCursorBgColor; // Revert to default
+      }
+
+      // Set text color (optional)
+      if (cursorTextColor) {
+        customCursor.style.color = cursorTextColor;
+      } else {
+        customCursor.style.color = defaultCursorTextColor; // Revert to default
+      }
+
+      customCursor.style.display = "block";
+      targetEl.style.cursor = "none";
+      updateCursorPosition(e);
+    });
+
+    targetEl.addEventListener("mouseleave", () => {
+      customCursor.style.display = "none";
+      targetEl.style.cursor = "auto";
+    });
+
+    targetEl.addEventListener("mousemove", (e) => {
+      if (customCursor.style.display === "block") {
+        updateCursorPosition(e);
+      }
+    });
+  });
+
+  function updateCursorPosition(event) {
+    customCursor.style.left = `${event.clientX}px`;
+    customCursor.style.top = `${event.clientY}px`;
   }
 });

@@ -6,7 +6,8 @@ year: "2023",
 src: "ressources/archives/bake_sale.png",
 description: "Make a social media post to promote a bake sale (fundraise for palestine).",
 tools: "Adobe Illustrator",
-tags: ["poster design"],
+links: "none",
+tags: [" poster design"],
 },
 {
 // 17
@@ -15,7 +16,8 @@ year: "2023",
 src: "ressources/archives/basedtaste.png",
 description: "Make an infographic for a gameshow",
 tools: "Adobe Illustrator, Google Sheets",
-tags: ["infographics","logo design"],
+links: "none",
+tags: [" infographics"," logo design"],
 },
 {
 // 16
@@ -24,7 +26,8 @@ year: "2023",
 src: "ressources/archives/suika.png",
 description: "Make a board based on players' best score.",
 tools: "Adobe Illustrator, Google Sheets",
-tags: ["infographics"],
+links: "none",
+tags: [" infographics"],
 },
 {
 // 15
@@ -33,7 +36,8 @@ year: "2023",
 src: "ressources/archives/website.png",
 description: "Make a post to promote a bake sale.",
 tools: "Adobe Photoshop, Visual Studio Code, Figma",
-tags: ["branding","web design","html / css","javascript"],
+links: "none",
+tags: [" branding"," web design"," html / css"," javascript"],
 },
 {
 // 14
@@ -42,7 +46,8 @@ year: "2023",
 src: "ressources/archives/reel.jpg",
 description: "Make a self-promotion video reel to showcase some projects.",
 tools: "Adobe After Effects",
-tags: ["typography","motion graphics","video editing"],
+links: "https://youtu.be/RRmho9cJC9w?si=VTMOUpjIRUC3x4Lu",
+tags: [" typography"," motion graphics"," video editing"],
 },
 {
 // 13
@@ -51,7 +56,8 @@ year: "2023",
 src: "ressources/GP_miel.png",
 description: "Rebrand an existing company’s brand identity, including its stationery and packaging.",
 tools: "Adobe Illustrator, Blender 3.1",
-tags: ["3D modeling","branding","packaging","logo design"],
+links: "project_miel_mtl_remake.html",
+tags: [" 3D modeling"," branding"," packaging"," logo design"],
 },
 {
 // 12
@@ -60,7 +66,8 @@ year: "2023",
 src: "ressources/casestudy/2_chk/chk3.jpg",
 description: "Create an news aggregator app for millenials with UI/UX principles in mind.",
 tools: "Figma, Adobe Illustrator",
-tags: ["app design","UI/UX","motion graphics","branding","logo design"],
+links: "project_check_it.html",
+tags: [" app design"," UI/UX"," motion graphics"," branding"," logo design"],
 },
 {
 // 11
@@ -69,7 +76,8 @@ year: "2022",
 src: "ressources/casestudy/3_heya/hy1.jpg",
 description: "Apply UI/UX principles to conceptualize an ideal dating app with gamification features.",
 tools: "Adobe XD, Adobe Illustrator, Adobe After Effects",
-tags: ["app design","UI/UX","motion graphics","branding","logo design"],
+links: "project_heya!.html",
+tags: [" app design"," UI/UX"," motion graphics"," branding"," logo design"],
 },
 {
 // 10
@@ -78,7 +86,8 @@ year: "2022",
 src: "ressources/archives/money.png",
 description: "Create a short typographic animation to illustrate the theme of speed through money.",
 tools: "Adobe After Effects, Adobe Illustrator",
-tags: ["typography","motion graphics","video editing"],
+links: "https://youtu.be/MtJU7K36OzA?si=KJ4zu3ejxZ0Obxxv",
+tags: [" typography"," motion graphics"," video editing"],
 },
 {
 // 9
@@ -87,7 +96,8 @@ year: "2022",
 src: "ressources/archives/22.png",
 description: "Create a design based on peoples preferences from a design survey.",
 tools: "Adobe Photoshop, Adobe Illustrator",
-tags: ["poster design","research creation"],
+links: "none",
+tags: [" poster design"," research creation"],
 },
 {
 // 8
@@ -96,7 +106,8 @@ year: "2021",
 src: "ressources/home_4.png",
 description: "Make a narrative sculpture with a minimalistic art style. Accompanied by a video montage to present the piece in detail.",
 tools: "Blender 3.0",
-tags: ["3D modeling"],
+links: "none",
+tags: [" 3D modeling"],
 },
 {
 // 7
@@ -105,7 +116,8 @@ year: "2021",
 src: "ressources/archives/orpheon.png",
 description: "Build a prototype website with multiple pages for a fictional company. The logo and identity of the brand are designed based on research from existing labels.",
 tools: "Adobe XD, Adobe Illustrator",
-tags: ["web design","branding","logo design"],
+links: "project_orpheon.html",
+tags: [" web design"," branding"," logo design"],
 },
 {
 // 6
@@ -114,7 +126,8 @@ year: "2021",
 src: "ressources/archives/runbunrun.png",
 description: "Create a small Javascript arcade-like based game where the player is a bunny trying to collect carrots and avoid daggers flying towards them.",
 tools: "Visual Studio Code, Procreate, Photoshop",
-tags: ["game design","javascript","html / css","illustration"],
+links: "none",
+tags: [" game design"," javascript"," html / css"," illustration"],
 },
 {
 // 5
@@ -123,7 +136,8 @@ year: "2020",
 src: "ressources/archives/mielmtl1.png",
 description: "Rebrand an existing company’s brand identity, including its stationery and packaging.",
 tools: "Adobe Illustrator, Adobe InDesign",
-tags: ["logo design","branding","packaging","video editing"],
+links: "none",
+tags: [" logo design"," branding"," packaging"," video editing"],
 },
 {
 // 4
@@ -132,7 +146,8 @@ year: "2020",
 src: "ressources/archives/2020.jpg",
 description: "Create duo poster designed for the Dawson Graphic Design 2020 Vernissage exhibition.",
 tools: "Adobe Photoshop, Adobe Illustrator",
-tags: ["poster design"],
+links: "none",
+tags: [" poster design"],
 },
 {
 // 3
@@ -141,7 +156,8 @@ year: "2020",
 src: "ressources/archives/typecube.jpg",
 description: "Create an artistic paper-based game that reflects an art movement.",
 tools: "Adobe InDesign, Adobe Illustrator",
-tags: ["print","typography"],
+links: "none",
+tags: [" print"," typography"],
 },
 {
 // 2
@@ -150,7 +166,8 @@ year: "2020",
 src: "ressources/archives/gdb.jpeg",
 description: "Design a detailed and informative program brochure of Dawson's Graphic Design program.",
 tools: "Adobe InDesign, Adobe Illustrator",
-tags: ["publication","layout","typography"],
+links: "project_gd_brochure.html",
+tags: [" publication"," layout"," typography"],
 },
 {
 // 1
@@ -159,7 +176,8 @@ year: "2020",
 src: "ressources/archives/dance.jpg",
 description: "Design a typographic based brochure and eBook to illustrate different types of dances",
 tools: "Adobe Illustrator, Adobe InDesign, Adobe Photoshop, Adobe After Effects",
-tags: ["publication","layout","typography","motion graphics"],
+links: "https://youtu.be/64A5oXlqgN0?si=Z3nERqZiPkYmHzLZ",
+tags: [" publication"," layout"," typography"," motion graphics"],
 },
 {
 // 0
@@ -168,7 +186,8 @@ year: "2020",
 src: "ressources/gp_printemps.png",
 description: "Create a motion graphics-based video promotion for the event/festival.",
 tools: "Adobe Illustrator, Adobe Photoshop, Adobe After Effects",
-tags: ["motion graphics","video editing"],
+links: "project_printemps_numérique.html",
+tags: [" motion graphics"," video editing"],
 },
  
 ];

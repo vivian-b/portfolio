@@ -21,6 +21,28 @@ main {
     flex-wrap: wrap;
 }
 
+
+ .nav-container {
+      width: 50vw;
+
+      grid-row: 1;
+      display: grid;
+      grid-template-columns: 7.5vw 1fr;
+      grid-template-rows: 45% 1fr;
+      row-gap: 0.1vh;
+      padding: 2%;
+      position: fixed;
+
+      z-index: 25;
+
+      font-size: 95%;
+
+  }
+
+.navLogo:hover,
+  .active:hover {
+      filter: none;
+  }
 /* radio filter section*/
 
 #filter-section {
@@ -28,8 +50,10 @@ main {
     padding: 15px;
     font-weight: 200;
     position: fixed;
+    margin-top: 90px;
 }
 
+  
 #tag-filters-container .tag-filter {
     display: block;
 
@@ -46,6 +70,7 @@ main {
 #projects-container {
     width: 35vw;
 margin-left: auto;
+padding: 3vh 0.1vw;
 }
 
 /* radio filters selection*/
@@ -95,7 +120,18 @@ margin-left: auto;
     padding: 4% 0.2%;
     color: white;
     border-bottom: 1px solid #eee;
+    cursor:ns-resize;
 }
+
+.project-card-clickable {
+    cursor: url(ressources/cursor.png)5 2,auto;
+ 
+
+}
+
+/* .project-card-clickable:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+} */
 
 .project-year {
     font-size: 16px;
@@ -113,9 +149,8 @@ margin-left: auto;
 
 .project-card:hover .project-hover-details {
     opacity: 1;
-    padding: 19px 0px;
+    padding: 16px 55px 14px 0px;
     max-height: 500px;
-
 }
 
 .project-card:hover {
@@ -123,12 +158,10 @@ margin-left: auto;
     color: #222222;
     border-left: 9px Solid#ffffff;
     border-radius: 4px;
-    transform: scale(1.17);
-    margin-left: 15px;
+    transform: scale(1.17);   
     padding: 5% 3%;
     box-shadow: 0 4px 28px 0 rgba(0, 0, 0, 0.829), 0 60px 20px 0 rgba(0, 0, 0, 0.589);
     transition: all 0.1s ease-in-out;
-
 }
 
 .project-card:hover span {
@@ -147,23 +180,20 @@ margin-left: auto;
 
 .project-card .project-tools {
     margin-bottom: 0;
-    /* Last item in the hover details */
+
 }
 
 /* Ensure your image preview CSS is also present */
-#hovered-project-image {
+/* #hovered-project-image {
     width: 100%;
-    height: 300px;
-    /* Example */
+    height: 350px;
     object-fit: cover;
     opacity: 1;
     transition: opacity 0.3s ease-in-out;
-    /* Matches IMAGE_PREVIEW_TRANSITION_DURATION_MS */
-}
+} */
 
 .no-projects {
     grid-column: 1 / -1;
-    /* Span all columns if grid is active */
     text-align: center;
     padding: 20px;
     font-style: italic;
@@ -171,7 +201,7 @@ margin-left: auto;
 }
 
 #image-preview-container {
-    width: 45vw;
+    width: 46vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -205,6 +235,7 @@ h3 {
 
 .tag-grouping {
     padding-top: 2px;
+    padding-right: 5px;
 }
 
 .tags {
@@ -213,7 +244,6 @@ h3 {
     gap: 9px;
     font-weight: 300;
     font-size: 1em;
-
 }
 
 /* Style for each individual tag span */
@@ -225,3 +255,25 @@ h3 {
     border-radius: 4px;
     font-size: 0.8em;
 }
+
+
+  #custom-text-cursor {
+      position: fixed;
+      display: none;
+      padding: 5px 10px;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: white;
+      border-radius: 5px;
+      font-size: 14px;
+      white-space: nowrap;
+      z-index: 9999;
+      pointer-events: none;
+      transform: translate(-40px, -20px);
+      transition: left 0.075s linear,
+          /* Smooths horizontal movement */
+          top 0.075s linear,
+          /* Smooths vertical movement */
+          opacity 0.2s ease-in-out,
+          /* For fade in/out (see point 2) */
+          background-color 0.2s ease-in-out;
+  }

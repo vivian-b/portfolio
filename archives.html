@@ -1,208 +1,98 @@
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Filter - Categories</title>
+    <link rel="stylesheet" href="style-archive.css" />
+    <!-- Same CSS as before -->
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <body>
+    <main>
+      <div id="custom-text-cursor"></div>
 
-    <link rel="stylesheet" href="style.css">
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <title>Portfolio</title>
-</head>
+      <div class="nav-container">
+        <a href="index.html">
+          <img src="ressources/logoW.png" alt="vbLogo White" class="navLogo" />
+        </a>
+        <!-- <a href="gallery.html" class="nav-link LnG">
+          <p>/ Gallery</p>
+        </a>
+        <a href="archives.html" class="nav-link LnG active">
+          <p>/ Archives</p> -->
+        </a>
+      </div>
 
-<body>
-    
-<!-- textbox -->
- <div id="custom-text-cursor"></div>
+      <aside id="filter-section">
+        <div id="category-filters-container">
+          <div class="category-filter">
+            <input
+              type="radio"
+              id="filter-all"
+              name="category-filter"
+              value="all"
+              checked
+            />
+            <label for="filter-all">All Projects</label>
+          </div>
+          <div class="category-filter">
+            <input
+              type="radio"
+              id="filter-motion"
+              name="category-filter"
+              value="motion"
+            />
+            <label for="filter-motion">Motion Design</label>
+          </div>
+          <div class="category-filter">
+            <input
+              type="radio"
+              id="filter-print"
+              name="category-filter"
+              value="print"
+            />
+            <label for="filter-print">Print & Layout</label>
+          </div>
+          <div class="category-filter">
+            <input
+              type="radio"
+              id="filter-web"
+              name="category-filter"
+              value="web"
+            />
+            <label for="filter-web">Web & UI</label>
+          </div>
+        </div>
+      </aside>
 
- <!-- filter box -->
+      <!-- image preview -->
+      <div id="image-preview-container">
+        <a
+          id="hovered-project-link"
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+          style="text-decoration: none; color: inherit; display: block"
+        >
+          <img
+            id="hovered-project-image"
+            src="ressources/alogo2.gif"
+            alt="Project Preview"
+          />
+          <h3 id="hovered-project-name"></h3>
+        </a>
+      </div>
 
-  <aside id="filter-section">
-            <h2>Filter by Tags:</h2>
-            <div id="tag-filters-container">
-                <!-- Tag checkboxes will be dynamically inserted here -->
-            </div>
-        </aside>
-
-        <section id="projects-container">
-            <!-- Filtered projects will be dynamically inserted here -->
-        </section>
+      <section id="projects-container">
+        <!-- Filtered projects will be dynamically inserted here -->
+      </section>
     </main>
 
+    <script src="projects-data.js"></script>
+    <!-- Same project data -->
 
-<!-- grid -->
-    <div id="grid-container2">
-
-        <div class="nav-container">
-            <a href="index.html">
-                <img src="ressources/logoW.png" alt="vbLogo White" class="navLogo">
-            </a>
-            <a href="gallery.html" class="nav-link LnG">
-                <p> / Gallery</p>
-            </a>
-            <a href="archives.html" class="nav-link LnG active">
-                <p> / Archives</p>
-            </a>
-        </div>
-<!-- imagepreview -->
-        <img src="" id="imageid" class="imagePreview" style="   object-fit: cover;
-        ">
-        </img>
-        <div class="imageFilter"> </div>
-        <div class="blockHide"></div>
-
-
-        <div class="descriptionListed reveal">
-            <p class="titleText title"></p><br>
-            <p id="textid" class="textW"></p>
-            </p>
-        </div>
-
-        <div class="detailGrid">
-          <div class="grouped"> <p class="projectName">name: </p>
-            <p class="itemName title"></p>
-        </div>
-    <div class="grouped">
-            <p id="projectYear">year:</p>
-            <p class="itemYear"></p>
-    </div>
-     <div class="grouped">
-            <p id="projectTag">tags:</p>
-            <p class="itemTags"></p>
-            </div>
- <div class="grouped">
-            <p id="projectTools">tools:</p>
-            <p class="itemTools"></p>
-        </div></div>
-
-<!-- list of projects -->
-
-        <div class="listedProjects">
-
-            <p class="year">'23</p>
-
-            <a   onmouseover="number=18" class=" trigger">
-                      <p class="inlineType">social media post</p>
-                <p class="listedText"> Bake Sale</p> 
-            </a>
-
-            <a   onmouseover="number=17" class=" trigger">
-                <p class="inlineType"> infographics</p>
-                <p class="listedText"> BaseD Taste</p> 
-            </a>
-
-            <a   onmouseover="number=16" class=" trigger">
-                <p class="inlineType"> infographics</p>
-                <p class="listedText"> Suika leaderboard</p> 
-            </a>
-
-            <a   onmouseover="number=15" class=" trigger">
-                <p class="inlineType"> web design</p>
-                <p class="listedText"> vb portfolio</p> 
-            </a>
-
-            <a href="https://youtu.be/RRmho9cJC9w" target="_blank" onmouseover="number=14" class=" trigger" style="cursor:pointer">
-                <p class="inlineType">motion graphics</p>
-                <p class="listedText"> Video Reel</p> 
-            </a>
-
-            <a href="project_miel_mtl.html" onmouseover="number=13" 
-            class="trigger hoverInteraction"
-            data-cursor-text="visit page"
-            data-cursor-bg-color="#FF5733">
-
-                <p class="inlineType">advertising</p>
-                <p class="listedText"> Miel MTL remake *</p>
-            </a>
-
-            <a href="project_check_it.html" onmouseover="number=12" class=" trigger hoverInteraction" data-cursor-text="visit page"
-            data-cursor-bg-color="#FF5733">
-                <p class="inlineType">app design</p>
-                <p class="listedText"> Check It *</p>
-            </a>
-
-<!--  -->
-            <p class="year">'22</p>
-
-            <a href="project_heya.html" onmouseover="number=11" class="trigger hoverInteraction" data-cursor-text="visit page"
-            data-cursor-bg-color="rgba(60,5,5,5)">
-                <p class="inlineType">app design</p>
-                <p class="listedText"> Heya! *</p> 
-            </a>
-
-            <a href="https://youtu.be/MtJU7K36OzA" target="_blank" onmouseover="number=10" class=" trigger" style="cursor:pointer">
-                <p class="inlineType">motion graphics</p>
-                <p class="listedText"> Cycle of Money</p> 
-            </a>
-
-            <a   onmouseover="number=9" class=" trigger">
-                <p class="inlineType">poster design</p>
-                <p class="listedText"> 22</p>
-            </a>
-<!--  -->
-            <div class="year">'21</div>
-
-            <a   onmouseover="number=8" class=" trigger">
-                <p class="inlineType">3D Modeling</p>
-                <p class="listedText"> Prey</p>
-            </a>
-
-            <a href="project_orpheon.html" onmouseover="number=7" class=" trigger hoverInteraction" data-cursor-text="visit page"
-            data-cursor-bg-color="#FF5733">
-                <p class="inlineType">web design</p>
-                <p class="listedText"> Orphéon *</p>
-            </a>
-
-            <a href="https://vivian-b.github.io/cart253/projects/project1/index.html" target="_blank" onmouseover="number=6" class=" trigger" style="cursor:pointer">
-                <p class="inlineType">game design</p>
-                <p class="listedText"> RunBunRun</p>
-            </a>
-           
-            <p class="year">'20</p>
-            <a href="project_miel_mtl.html" onmouseover="number=5" class="trigger hoverInteraction" data-cursor-text="visit page"
-            data-cursor-bg-color="#FF5733">
-                <p class="inlineType">branding</p>
-                <p class="listedText"> Miel MTL</p>
-            </a>
-
-            <a   onmouseover="number=4" class=" trigger">
-                <p class="inlineType">poster design</p>
-                <p class="listedText"> 2020 Vernissage</p>
-            </a>
-
-            <a   onmouseover="number=3" class=" trigger">
-                <p class="inlineType">print</p>
-                <p class="listedText"> Type Cube</p>
-            </a>
-
-            <a href="project_gdbrochure.html" onmouseover="number=2" class=" trigger hoverInteraction" data-cursor-text="visit page"
-            data-cursor-bg-color="#FF5733">
-                <p class="inlineType">publication</p>
-                <p class="listedText"> GD Brochure *</p>
-            </a>
-
-            <a href="https://youtu.be/64A5oXlqgN0" target="_blank" onmouseover="number=1" class=" trigger" style="cursor:pointer">
-                <p class="inlineType">publication</p>
-                <p class="listedText"> Dance Typographic Rhythm</p>
-            </a>
-
-            <a href="project_printempsnumerique.html" onmouseover="number=0" class=" trigger hoverInteraction" data-cursor-text="visit page"
-            data-cursor-bg-color="#FF5733">
-                <p class="inlineType">motion graphics</p>
-                <p class="listedText"> Printemps Numérique *</p>
-            </a>
-
-            <a    class=" trigger " >
-                <p class="inlineType"> </p>
-            </a>
-        </div>
-
-    </div>
-
-    <script src="script.js"></script>
-
-
-</body>
-
+    <script src="app.js"></script>
+    <!-- New app logic file -->
+  </body>
 </html>
