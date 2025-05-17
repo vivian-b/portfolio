@@ -223,7 +223,7 @@ tags: [" publication"," layout"," typography"," motion graphics"],
 // 0
 name: "Printemps Numérique",
 year: "2020",
-src: "ressources/gp_printemps.png",
+src: "ressources/printemps_numerique.png",
 description: "Create a motion graphics-based video promotion for the event/festival.",
 tools: "Adobe Illustrator, Adobe Photoshop, Adobe After Effects",
 links: "project_printemps_numerique.html",
