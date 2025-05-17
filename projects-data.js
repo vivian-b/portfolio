@@ -1,5 +1,45 @@
 const projects = [
 {
+// 23
+name: "Pokemon Challenge",
+year: "2025",
+src: "ressources/archives/pokemon_challenge.png",
+description: "Create slides for a Pokemon Challenge held at a convention.",
+tools: "Google Sheets, Figma",
+links: "",
+tags: [" spreadsheet"," figma"],
+},
+{
+// 22
+name: "UNI SUSHI Social Media Marketing",
+year: "2025",
+src: "ressources/archives/uni_sushi_social_media_marketing.png",
+description: "Make a social media audit and plan a social media strategy for a brand.",
+tools: "Google Sheets, Figma",
+links: "",
+tags: [" spreadsheet"," figma"],
+},
+{
+// 20
+name: "Visual Schedule Automation",
+year: "2024",
+src: "ressources/archives/schedule_automation.png",
+description: "Build a system to plan streamer's weekly schedules and easily convert timezones. Spreadsheet is used as the main input and synced with the Figma file.",
+tools: "Google Sheets, Figma",
+links: "https://docs.google.com/document/d/12WoHkxKplWXfxHWbFtrl5_sgrusfj2BLCD1Y1ZBt6AU/edit?usp=sharing",
+tags: [" infographics"," spreadsheet"," figma"],
+},
+{
+// 19
+name: "Petal & Bloom",
+year: "2024",
+src: "ressources/archives/petal_and_bloom.png",
+description: "Create a social media account for a fictional brand",
+tools: "Adobe Illustrator, Figma",
+links: "https://youtu.be/_tbej0yJ1J4?si=Ze5ZZ4l4YWP0SHLZ",
+tags: [" branding"," social media"," logo design"],
+},
+{
 // 18
 name: "Bake Sale",
 year: "2023",
@@ -183,7 +223,7 @@ tags: [" publication"," layout"," typography"," motion graphics"],
 // 0
 name: "Printemps Numérique",
 year: "2020",
-src: "ressources/archives/printemps_numerique.png",
+src: "ressources/gp_printemps.png",
 description: "Create a motion graphics-based video promotion for the event/festival.",
 tools: "Adobe Illustrator, Adobe Photoshop, Adobe After Effects",
 links: "project_printemps_numerique.html",

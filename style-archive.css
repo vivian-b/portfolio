@@ -135,6 +135,7 @@ padding: 3vh 0.1vw;
 
 .project-year {
     font-size: 16px;
+    margin-bottom: 10px;
 }
 
 .project-card .project-hover-details {
@@ -149,7 +150,7 @@ padding: 3vh 0.1vw;
 
 .project-card:hover .project-hover-details {
     opacity: 1;
-    padding: 16px 55px 14px 0px;
+    padding: 0px 32% 20px 0px;
     max-height: 500px;
 }
 
