@@ -166,7 +166,7 @@ year: "2021",
 src: "ressources/archives/runbunrun.png",
 description: "Create a small Javascript arcade-like based game where the player is a bunny trying to collect carrots and avoid daggers flying towards them.",
 tools: "Visual Studio Code, Procreate, Photoshop",
-links: "none",
+links: "https://vivian-b.github.io/cart253/projects/project1/index.html",
 tags: [" game design"," javascript"," html / css"," illustration"],
 },
 {
