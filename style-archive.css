@@ -23,29 +23,55 @@ main {
 
 
  .nav-container {
-      width: 50vw;
-      padding: 2% 0 0 2%;
+
+      grid-row: 1;
+      height: 28vh;
+      padding: 2%;
       position: fixed;
-
+      display: flex;
+      flex-direction: column;
+      row-gap: 15%;
       z-index: 25;
-
   }
+
+  .nav-link {
+      color: white;
+      margin-right: 5px;
+
+      font-weight: 100;
+      font-size: 1.3em;
+      line-height: 0.6em;
+
+      transition: all 0.2s;
+      cursor: pointer;
+  }
+  
+a {
+    text-decoration: none;
+
+}
+
+a.active {
+    font-weight: 700;
+    cursor: default;
+}
 
 .navLogo:hover,
-  .active:hover {
-      filter: none;
-  }
+.active:hover {
+    filter: none;
+}
+
 /* radio filter section*/
 
 #filter-section {
-    width: 200px;
-    padding: 15px;
+    width: 220px;
+    padding: 20px;
     font-weight: 200;
     position: fixed;
-    margin-top: 90px;
+    margin-top: 170px;
 }
 
-  
+
 #tag-filters-container .tag-filter {
     display: block;
 
@@ -61,8 +87,8 @@ main {
 /* project list container*/
 #projects-container {
     width: 35vw;
-margin-left: auto;
-padding: 3vh 0.1vw;
+    margin-left: auto;
+    padding: 3vh 0.1vw;
 }
 
 /* radio filters selection*/
@@ -112,12 +138,12 @@ padding: 3vh 0.1vw;
     padding: 4% 0.2%;
     color: white;
     border-bottom: 1px solid #eee;
-    cursor:ns-resize;
+    cursor: ns-resize;
 }
 
 .project-card-clickable {
-    cursor: url(ressources/cursor.png)5 2,auto;
- 
+    cursor: url(ressources/cursor.png)5 2, auto;
+
 
 }
 
@@ -151,7 +177,7 @@ padding: 3vh 0.1vw;
     color: #222222;
     border-left: 9px Solid#ffffff;
     border-radius: 4px;
-    transform: scale(1.17);   
+    transform: scale(1.17);
     padding: 5% 3%;
     box-shadow: 0 4px 28px 0 rgba(0, 0, 0, 0.829), 0 60px 20px 0 rgba(0, 0, 0, 0.589);
     transition: all 0.1s ease-in-out;
@@ -250,23 +276,23 @@ h3 {
 }
 
 
-  #custom-text-cursor {
-      position: fixed;
-      display: none;
-      padding: 5px 10px;
-      background-color: rgba(0, 0, 0, 0.8);
-      color: white;
-      border-radius: 5px;
-      font-size: 14px;
-      white-space: nowrap;
-      z-index: 9999;
-      pointer-events: none;
-      transform: translate(-40px, -20px);
-      transition: left 0.075s linear,
-          /* Smooths horizontal movement */
-          top 0.075s linear,
-          /* Smooths vertical movement */
-          opacity 0.2s ease-in-out,
-          /* For fade in/out (see point 2) */
-          background-color 0.2s ease-in-out;
-  }
+#custom-text-cursor {
+    position: fixed;
+    display: none;
+    padding: 5px 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    border-radius: 5px;
+    font-size: 14px;
+    white-space: nowrap;
+    z-index: 9999;
+    pointer-events: none;
+    transform: translate(-40px, -20px);
+    transition: left 0.075s linear,
+        /* Smooths horizontal movement */
+        top 0.075s linear,
+        /* Smooths vertical movement */
+        opacity 0.2s ease-in-out,
+        /* For fade in/out (see point 2) */
+        background-color 0.2s ease-in-out;
+}
