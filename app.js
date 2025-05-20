@@ -217,9 +217,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const categories = {
     all: [], // An empty array here means "no specific tags to filter by", so all projects show
+    cases: ["case study"],
     motion: ["motion graphics", "video editing"],
-    print: ["publication", "layout", "typography", "poster design"],
-    web: ["ui", "ux", "web design", "html / css"], // Note: " html / css" with leading space might be an issue if project tags don't have it
+    branding: ["branding", "logo design"],
+    web: ["ui", "ux","ui/ux", "web design", "html / css"], // Note: " html / css" with leading space might be an issue if project tags don't have it
   };
 
   function updateCategoryHighlight() {
@@ -273,8 +274,6 @@ document.addEventListener("DOMContentLoaded", () => {
       // For 'all', tagsForCategory remains [] which means show all projects when passed to filter.
     }
 
-    // Assuming you've implemented filterProjectsByCategoryTags as suggested before
-    // Or that your filterProjectsByMultipleTags handles an empty tagsForCategory correctly (shows all)
     const filteredProjects = filterProjectsByCategoryTags(
       // or filterProjectsByMultipleTags
       projects,

@@ -20,7 +20,7 @@ links: "",
 tags: [" spreadsheet"," figma"],
 },
 {
-// 20
+// 21
 name: "Visual Schedule Automation",
 year: "2024",
 src: "ressources/archives/schedule_automation.png",
@@ -30,7 +30,7 @@ links: "https://docs.google.com/document/d/12WoHkxKplWXfxHWbFtrl5_sgrusfj2BLCD1Y
 tags: [" infographics"," spreadsheet"," figma"],
 },
 {
-// 19
+// 20
 name: "Petal & Bloom",
 year: "2024",
 src: "ressources/archives/petal_and_bloom.png",
@@ -38,6 +38,16 @@ description: "Create a social media account for a fictional brand",
 tools: "Adobe Illustrator, Figma",
 links: "https://youtu.be/_tbej0yJ1J4?si=Ze5ZZ4l4YWP0SHLZ",
 tags: [" branding"," social media"," logo design"],
+},
+{
+// 19
+name: "Carrd",
+year: "2024",
+src: "ressources/archives/carrd.png",
+description: "Design a website with Carrd (a creative 1 page site builder) for online commissions.",
+tools: "Carrd",
+links: "https://euwen.carrd.co/",
+tags: [" web design"],
 },
 {
 // 18
@@ -57,7 +67,7 @@ src: "ressources/archives/basedtaste.png",
 description: "Make an infographic for a gameshow",
 tools: "Adobe Illustrator, Google Sheets",
 links: "none",
-tags: [" infographics"," logo design"],
+tags: [" infographics"],
 },
 {
 // 16
@@ -77,7 +87,7 @@ src: "ressources/archives/website.png",
 description: "Make a post to promote a bake sale.",
 tools: "Adobe Photoshop, Visual Studio Code, Figma",
 links: "none",
-tags: [" branding"," web design"," html / css"," javascript"],
+tags: [" web design"," html / css"," javascript"],
 },
 {
 // 14
@@ -97,7 +107,7 @@ src: "ressources/GP_miel.png",
 description: "Rebrand an existing company’s brand identity, including its stationery and packaging.",
 tools: "Adobe Illustrator, Blender 3.1",
 links: "project_miel_mtl_remake.html",
-tags: [" 3D modeling"," branding"," packaging"," logo design"],
+tags: [" 3D modeling"," branding"," packaging"," logo design"," case study"],
 },
 {
 // 12
@@ -107,7 +117,7 @@ src: "ressources/casestudy/2_chk/chk3.jpg",
 description: "Create an news aggregator app for millenials with UI/UX principles in mind.",
 tools: "Figma, Adobe Illustrator",
 links: "project_check_it.html",
-tags: [" app design"," UI/UX"," motion graphics"," branding"," logo design"],
+tags: [" app design"," UI/UX"," motion graphics"," branding"," logo design"," case study"],
 },
 {
 // 11
@@ -116,8 +126,8 @@ year: "2022",
 src: "ressources/casestudy/3_heya/hy1.jpg",
 description: "Apply UI/UX principles to conceptualize an ideal dating app with gamification features.",
 tools: "Adobe XD, Adobe Illustrator, Adobe After Effects",
-links: "project_heya!.html",
-tags: [" app design"," UI/UX"," motion graphics"," branding"," logo design"],
+links: "project_heya.html",
+tags: [" app design"," UI/UX"," motion graphics"," branding"," logo design"," case study"],
 },
 {
 // 10
@@ -157,7 +167,7 @@ src: "ressources/archives/orpheon.png",
 description: "Build a prototype website with multiple pages for a fictional company. The logo and identity of the brand are designed based on research from existing labels.",
 tools: "Adobe XD, Adobe Illustrator",
 links: "project_orpheon.html",
-tags: [" web design"," branding"," logo design"],
+tags: [" web design"," branding"," logo design"," case study"],
 },
 {
 // 6
@@ -207,7 +217,7 @@ src: "ressources/archives/gdb.jpeg",
 description: "Design a detailed and informative program brochure of Dawson's Graphic Design program.",
 tools: "Adobe InDesign, Adobe Illustrator",
 links: "project_gd_brochure.html",
-tags: [" publication"," layout"," typography"],
+tags: [" publication"," layout"," typography"," case study"],
 },
 {
 // 1
@@ -223,11 +233,11 @@ tags: [" publication"," layout"," typography"," motion graphics"],
 // 0
 name: "Printemps Numérique",
 year: "2020",
-src: "ressources/printemps_numerique.png",
+src: "ressources/archives/printemps_numerique.png",
 description: "Create a motion graphics-based video promotion for the event/festival.",
 tools: "Adobe Illustrator, Adobe Photoshop, Adobe After Effects",
 links: "project_printemps_numerique.html",
-tags: [" motion graphics"," video editing"],
+tags: [" motion graphics"," video editing"," case study"],
 },
  
 ];

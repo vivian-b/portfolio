@@ -395,21 +395,18 @@
 
 
   .nav-container {
-      width: 100vw;
 
       grid-row: 1;
-      display: grid;
-      grid-template-columns: 7.5vw 1fr;
-      grid-template-rows: 45% 1fr;
-      row-gap: 0.1vh;
+      height: 14vh;
       padding: 2%;
       position: fixed;
-
+      display: flex;
+      flex-direction: column;
+      row-gap: 22%;
       z-index: 25;
-
-      font-size: 95%;
-
+      font-size: 140%;
   }
+
 
   .nav-container2 {
       width: 100vw;
@@ -1305,8 +1302,6 @@
 
       .navLogo {
           width: 50%;
-          grid-column: 4;
-
       }
 
 
