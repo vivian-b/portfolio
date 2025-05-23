@@ -1,6 +1,6 @@
 const projects = [
 {
-// 23
+// 24
 name: "Pokemon Challenge",
 year: "2025",
 src: "ressources/archives/pokemon_challenge.png",
@@ -10,7 +10,7 @@ links: "",
 tags: [" spreadsheet"," figma"],
 },
 {
-// 22
+// 23
 name: "UNI SUSHI Social Media Marketing",
 year: "2025",
 src: "ressources/archives/uni_sushi_social_media_marketing.png",
@@ -20,7 +20,7 @@ links: "",
 tags: [" spreadsheet"," figma"],
 },
 {
-// 21
+// 22
 name: "Visual Schedule Automation",
 year: "2024",
 src: "ressources/archives/schedule_automation.png",
@@ -30,7 +30,7 @@ links: "https://docs.google.com/document/d/12WoHkxKplWXfxHWbFtrl5_sgrusfj2BLCD1Y
 tags: [" infographics"," spreadsheet"," figma"],
 },
 {
-// 20
+// 21
 name: "Petal & Bloom",
 year: "2024",
 src: "ressources/archives/petal_and_bloom.png",
@@ -40,7 +40,7 @@ links: "https://youtu.be/_tbej0yJ1J4?si=Ze5ZZ4l4YWP0SHLZ",
 tags: [" branding"," social media"," logo design"],
 },
 {
-// 19
+// 20
 name: "Carrd",
 year: "2024",
 src: "ressources/archives/carrd.png",
@@ -50,7 +50,7 @@ links: "https://euwen.carrd.co/",
 tags: [" web design"],
 },
 {
-// 18
+// 19
 name: "Bake Sale",
 year: "2023",
 src: "ressources/archives/bake_sale.png",
@@ -60,7 +60,7 @@ links: "none",
 tags: [" poster design"],
 },
 {
-// 17
+// 18
 name: "BaseD Taste",
 year: "2023",
 src: "ressources/archives/basedtaste.png",
@@ -70,7 +70,7 @@ links: "none",
 tags: [" infographics"],
 },
 {
-// 16
+// 17
 name: "Suika Leaderboard",
 year: "2023",
 src: "ressources/archives/suika.png",
@@ -80,7 +80,7 @@ links: "none",
 tags: [" infographics"],
 },
 {
-// 15
+// 16
 name: "Portfolio Website",
 year: "2023",
 src: "ressources/archives/website.png",
@@ -90,7 +90,7 @@ links: "none",
 tags: [" web design"," html / css"," javascript"],
 },
 {
-// 14
+// 15
 name: "Video Reel",
 year: "2023",
 src: "ressources/archives/reel.jpg",
@@ -100,7 +100,7 @@ links: "https://youtu.be/RRmho9cJC9w?si=VTMOUpjIRUC3x4Lu",
 tags: [" typography"," motion graphics"," video editing"],
 },
 {
-// 13
+// 14
 name: "Miel MTL remake",
 year: "2023",
 src: "ressources/GP_miel.png",
@@ -110,7 +110,7 @@ links: "project_miel_mtl_remake.html",
 tags: [" 3D modeling"," branding"," packaging"," logo design"," case study"],
 },
 {
-// 12
+// 13
 name: "Check It",
 year: "2023",
 src: "ressources/casestudy/2_chk/chk3.jpg",
@@ -118,6 +118,16 @@ description: "Create an news aggregator app for millenials with UI/UX principles
 tools: "Figma, Adobe Illustrator",
 links: "project_check_it.html",
 tags: [" app design"," UI/UX"," motion graphics"," branding"," logo design"," case study"],
+},
+{
+// 12
+name: "Design Forum",
+year: "2022",
+src: "ressources/archives/design_forum.png",
+description: "Apply UX principles to conceptualize a platform for designers to help eachother out. Users are encouraged to connect with others and participate in open contests.",
+tools: "Adobe XD",
+links: "",
+tags: [" UI/UX"," web design"],
 },
 {
 // 11
