@@ -220,7 +220,9 @@ document.addEventListener("DOMContentLoaded", () => {
     cases: ["case study"],
     motion: ["motion graphics", "video editing"],
     branding: ["branding", "logo design"],
-    web: ["ui", "ux","ui/ux", "web design", "html / css"], // Note: " html / css" with leading space might be an issue if project tags don't have it
+    web: ["ui", "ux","ui/ux", "web design", "html / css"], 
+      uiux: ["ui", "ux","ui/ux"], 
+
   };
 
   function updateCategoryHighlight() {

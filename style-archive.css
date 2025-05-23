@@ -25,7 +25,7 @@ main {
  .nav-container {
 
       grid-row: 1;
-      height: 28vh;
+      height: 20vh;
       padding: 2%;
       position: fixed;
       display: flex;
